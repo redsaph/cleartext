@@ -15,11 +15,11 @@ adaptiveHideActive=0
 stowAway=0
 stowAwayName=NULL
 
-bottomText=mTitle
 topText=mArtist
+bottomText=mTitle
 
-regularTopTextMeasure=mArtist1
-regularBottomTextMeasure=mTitle1
+regularTopTextMeasure=LuaTopText
+regularBottomTextMeasure=LuaBottomText
 disableScroll=1
 
 removeExtraFromText=1
@@ -31,19 +31,10 @@ mediaTextPositionHor=0
 mediaTextAlignment=LeftBottom
 mediaTextAlignmentPure=Left
 interfaceTextAlignment=Right
-nowTextPositionHor=109.44
-hairlinePositionHor=119.52
-topTextPositionHor=129.6
-playCtrlPositionHor=63.36
-settingsTextPositionHor=72
-indicatorPositionHor=46.08
-indicatorPositionHorPure=23.04
-
-
-
-
-
-
-
-
-currentlySet=Spotify
+nowTextPositionHor=(#Size#*0.19)
+hairlinePositionHor=(#Size#*0.2075)
+topTextPositionHor=(#Size#*0.225)
+playCtrlPositionHor=(#Size#*0.11)
+settingsTextPositionHor=(#Size#*0.125)
+indicatorPositionHor=(#Size#*0.08)
+indicatorPositionHorPure=(#Size#*0.04)
