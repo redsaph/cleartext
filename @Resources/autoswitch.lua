@@ -38,6 +38,13 @@ function adaptForSpotify()
 	print('Cleartext is switching to Spotify')	
 end -- ends adaptForSpotify
 
+function adaptForWebNowPlaying()
+	SKIN:Bang('!WriteKeyValue Variables MusicSwitch 2 "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables CurPlayer Spotify "#@#variables.inc"')
+	SKIN:Bang('!Refresh')
+	print('Cleartext is switching to Spotify')	
+end -- ends adaptForSpotify
+
 function enableMeasureNowPlaying()
 	SKIN:Bang('!EnableMeasure "mSmartSwitchNowPlaying"')	
 	print('Called mSmartSwitchNowPlaying')
