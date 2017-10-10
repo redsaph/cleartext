@@ -1,6 +1,6 @@
 [Variables]
 
-Player=Spotify
+Player=WMP
 alignRight=0
 
 Size=(#WORKAREAWIDTH#*0.3)
@@ -8,6 +8,7 @@ Size=(#WORKAREAWIDTH#*0.3)
 ; 0 = MUSIC, 1 = SPOTIFY, 2 = WEBNOWPLAYING
 MusicSwitch=2
 playerController=StateButton
+currentlySet=WebNowPlaying
 
 adaptiveHideActive=1
 
@@ -39,3 +40,4 @@ indicatorPositionHorPure=23.04
 
 
 
+currentlySet=Spotify

@@ -15,6 +15,74 @@
 -- Last modified by Redsaph on April 4, 2017
 --
 
+playerTable = {
+	["Windows Media Player"] = {
+		playerController = "Title",
+		musicSwitch = "0",
+		player = "WMP"
+	},
+	["Foobar2000"] = {
+		playerController = "Title",
+		musicSwitch = "0",
+		player = "CAD"
+	},
+	["MusicBee"] = {
+		playerController = "Title",
+		musicSwitch = "0",
+		player = "CAD"
+	},
+	["Spotify"] = {
+		playerController = "Title",
+		musicSwitch = "1",
+		player = "Spotify"
+	},
+	["iTunes"] = {
+		playerController = "Title",
+		musicSwitch = "0",
+		player = "iTunes"
+	},
+	["VLC"] = {
+		playerController = "Title",
+		musicSwitch = "0",
+		player = "CAD"
+	},
+	["WebNowPlaying"] = {
+		playerController = "StateButton",
+		musicSwitch = "2",
+		player = "WMP"
+	},
+	["MediaMonkey"] = {
+		playerController = "Title",
+		musicSwitch = "0",
+		player = "MediaMonkey"
+	},
+	["Media Player Classic"] = {
+		playerController = "Title",
+		musicSwitch = "0",
+		player = "WLM"
+	},
+	["J. River Media Center"] = {
+		playerController = "Title",
+		musicSwitch = "0",
+		player = "CAD"
+	},
+	["Winamp"] = {
+		playerController = "Title",
+		musicSwitch = "0",
+		player = "Winamp"
+	},
+	["Zune"] = {
+		playerController = "Title",
+		musicSwitch = "0",
+		player = "WLM"
+	},
+	["AIMP"] = {
+		playerController = "Title",
+		musicSwitch = "0",
+		player = "AIMP"
+	}
+}
+
 function alignLeft()	
 	SKIN:Bang('!WriteKeyValue Variables mediaTextPositionHor 0 "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables mediaTextAlignment "LeftBottom" "#@#variables.inc"')
@@ -48,6 +116,15 @@ function alignRight()
 	SKIN:Bang('!WriteKeyValue Variables alignRight 1 "#@#variables.inc"')
 	SKIN:Bang('!Refresh #CURRENTCONFIG#')
 end -- ends alignRight
+
+function setPlayer(currentlySet)
+	SKIN:Bang('!WriteKeyValue Variables MusicSwitch ' .. playerTable[currentlySet]['musicSwitch'] .. ' "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables playerController ' .. playerTable[currentlySet]['playerController'] .. ' "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables Player ' .. playerTable[currentlySet]['player'] .. ' "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables currentlySet ' .. currentlySet .. ' "#@#variables.inc"')
+	SKIN:Bang('!UpdateMeter "playerTextDialogSubtitle"')
+	SKIN:Bang('!Redraw')
+end -- ends setPlayer
 
 function refreshCleartext()
 	SKIN:Bang('!Refresh #CURRENTCONFIG#')
