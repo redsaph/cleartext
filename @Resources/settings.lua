@@ -12,8 +12,76 @@
 --
 -- Thank you very much.
 --
--- Last modified by Redsaph on April 4, 2017
+-- Last modified by Redsaph on October 10, 2017
 --
+
+playerTable = {
+	["Windows Media Player"] = {
+		playerController = "Title0",
+		musicSwitch = "0",
+		player = "WMP"
+	},
+	["Foobar2000"] = {
+		playerController = "Title0",
+		musicSwitch = "0",
+		player = "CAD"
+	},
+	["MusicBee"] = {
+		playerController = "Title0",
+		musicSwitch = "0",
+		player = "CAD"
+	},
+	["Spotify"] = {
+		playerController = "Title0",
+		musicSwitch = "1",
+		player = "Spotify"
+	},
+	["iTunes"] = {
+		playerController = "Title0",
+		musicSwitch = "0",
+		player = "iTunes"
+	},
+	["VLC"] = {
+		playerController = "Title0",
+		musicSwitch = "0",
+		player = "CAD"
+	},
+	["WebNowPlaying"] = {
+		playerController = "StateButton2",
+		musicSwitch = "2",
+		player = "WMP"
+	},
+	["MediaMonkey"] = {
+		playerController = "Title0",
+		musicSwitch = "0",
+		player = "MediaMonkey"
+	},
+	["Media Player Classic"] = {
+		playerController = "Title0",
+		musicSwitch = "0",
+		player = "WLM"
+	},
+	["J. River Media Center"] = {
+		playerController = "Title0",
+		musicSwitch = "0",
+		player = "CAD"
+	},
+	["Winamp"] = {
+		playerController = "Title0",
+		musicSwitch = "0",
+		player = "Winamp"
+	},
+	["Zune"] = {
+		playerController = "Title0",
+		musicSwitch = "0",
+		player = "WLM"
+	},
+	["AIMP"] = {
+		playerController = "Title0",
+		musicSwitch = "0",
+		player = "AIMP"
+	}
+}
 
 function alignLeft()	
 	SKIN:Bang('!WriteKeyValue Variables mediaTextPositionHor 0 "#@#variables.inc"')
@@ -49,6 +117,15 @@ function alignRight()
 	SKIN:Bang('!Refresh #CURRENTCONFIG#')
 end -- ends alignRight
 
+function setPlayer(currentlySet)
+	SKIN:Bang('!WriteKeyValue Variables MusicSwitch ' .. playerTable[currentlySet]['musicSwitch'] .. ' "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables playerController ' .. playerTable[currentlySet]['playerController'] .. ' "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables Player ' .. playerTable[currentlySet]['player'] .. ' "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables currentlySet ' .. currentlySet .. ' "#@#variables.inc"')
+	SKIN:Bang('!UpdateMeter "playerTextDialogSubtitle" "Settings.ini"')
+	SKIN:Bang('!Redraw "Cleartext/Settings" "Settings.ini"')
+end -- ends setPlayer
+
 function refreshCleartext()
 	SKIN:Bang('!Refresh #CURRENTCONFIG#')
 	alignment = SKIN:GetVariable('currentlySetAlign')
@@ -79,3 +156,19 @@ function refreshCleartext()
 	end
 	
 end -- ends refreshCleartext
+
+function setScroll(valid)
+	if valid == true then
+		-- For Cleartext Regular
+		SKIN:Bang('!WriteKeyValue Variables regularTopTextMeasure "LuaTopText" "#@#variables.inc"')
+		SKIN:Bang('!WriteKeyValue Variables regularBottomTextMeasure "LuaBottomText" "#@#variables.inc"')
+		SKIN:Bang('!WriteKeyValue Variables disableScroll 0 "#@#variables.inc"')
+	elseif valid == false then
+		-- For Cleartext Regular
+		SKIN:Bang('!WriteKeyValue Variables regularTopTextMeasure "#topText##MusicSwitch#" "#@#variables.inc"')
+		SKIN:Bang('!WriteKeyValue Variables regularBottomTextMeasure "#bottomText##MusicSwitch#" "#@#variables.inc"')
+		SKIN:Bang('!WriteKeyValue Variables disableScroll 1 "#@#variables.inc"')
+	end
+
+	refreshCleartext()	
+end -- ends setScroll
