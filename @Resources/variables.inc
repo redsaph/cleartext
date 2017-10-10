@@ -1,24 +1,26 @@
 [Variables]
 
-Player=WMP
+Player=Spotify
 alignRight=0
 
 Size=(#WORKAREAWIDTH#*0.3)
 
 ; 0 = MUSIC, 1 = SPOTIFY, 2 = WEBNOWPLAYING
-MusicSwitch=2
+MusicSwitch=1
+playerController=Title0
+currentlySet=Spotify
 
-playerController=StateButton2
-
-currentlySet=WebNowPlaying
-
-adaptiveHideActive=1
+adaptiveHideActive=0
 
 stowAway=0
 stowAwayName=NULL
 
 bottomText=mTitle
 topText=mArtist
+
+regularTopTextMeasure=LuaTopText
+regularBottomTextMeasure=LuaBottomText
+disableScroll=0
 
 thinFont=Gibson Light
 thickFont=Gibson

@@ -12,7 +12,7 @@
 --
 -- Thank you very much.
 --
--- Last modified by Redsaph on April 4, 2017
+-- Last modified by Redsaph on October 10, 2017
 --
 
 playerTable = {
@@ -122,8 +122,8 @@ function setPlayer(currentlySet)
 	SKIN:Bang('!WriteKeyValue Variables playerController ' .. playerTable[currentlySet]['playerController'] .. ' "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables Player ' .. playerTable[currentlySet]['player'] .. ' "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables currentlySet ' .. currentlySet .. ' "#@#variables.inc"')
-	SKIN:Bang('!UpdateMeter "playerTextDialogSubtitle"')
-	SKIN:Bang('!Redraw')
+	SKIN:Bang('!UpdateMeter "playerTextDialogSubtitle" "Settings.ini"')
+	SKIN:Bang('!Redraw "Cleartext/Settings" "Settings.ini"')
 end -- ends setPlayer
 
 function refreshCleartext()
@@ -156,3 +156,19 @@ function refreshCleartext()
 	end
 	
 end -- ends refreshCleartext
+
+function setScroll(valid)
+	if valid == true then
+		-- For Cleartext Regular
+		SKIN:Bang('!WriteKeyValue Variables regularTopTextMeasure "LuaTopText" "#@#variables.inc"')
+		SKIN:Bang('!WriteKeyValue Variables regularBottomTextMeasure "LuaBottomText" "#@#variables.inc"')
+		SKIN:Bang('!WriteKeyValue Variables disableScroll 0 "#@#variables.inc"')
+	elseif valid == false then
+		-- For Cleartext Regular
+		SKIN:Bang('!WriteKeyValue Variables regularTopTextMeasure "#topText##MusicSwitch#" "#@#variables.inc"')
+		SKIN:Bang('!WriteKeyValue Variables regularBottomTextMeasure "#bottomText##MusicSwitch#" "#@#variables.inc"')
+		SKIN:Bang('!WriteKeyValue Variables disableScroll 1 "#@#variables.inc"')
+	end
+
+	refreshCleartext()	
+end -- ends setScroll
