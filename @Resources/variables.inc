@@ -18,9 +18,9 @@ stowAwayName=NULL
 bottomText=mTitle
 topText=mArtist
 
-regularTopTextMeasure=LuaTopText
-regularBottomTextMeasure=LuaBottomText
-disableScroll=0
+regularTopTextMeasure=mArtist1
+regularBottomTextMeasure=mTitle1
+disableScroll=1
 
 removeExtraFromText=1
 
