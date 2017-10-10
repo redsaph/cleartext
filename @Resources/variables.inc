@@ -22,6 +22,8 @@ regularTopTextMeasure=LuaTopText
 regularBottomTextMeasure=LuaBottomText
 disableScroll=0
 
+removeExtraFromText=1
+
 thinFont=Gibson Light
 thickFont=Gibson
 
