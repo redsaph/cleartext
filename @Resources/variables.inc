@@ -7,7 +7,9 @@ Size=(#WORKAREAWIDTH#*0.3)
 
 ; 0 = MUSIC, 1 = SPOTIFY, 2 = WEBNOWPLAYING
 MusicSwitch=2
-playerController=StateButton
+
+playerController=StateButton2
+
 currentlySet=WebNowPlaying
 
 adaptiveHideActive=1

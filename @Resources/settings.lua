@@ -17,67 +17,67 @@
 
 playerTable = {
 	["Windows Media Player"] = {
-		playerController = "Title",
+		playerController = "Title0",
 		musicSwitch = "0",
 		player = "WMP"
 	},
 	["Foobar2000"] = {
-		playerController = "Title",
+		playerController = "Title0",
 		musicSwitch = "0",
 		player = "CAD"
 	},
 	["MusicBee"] = {
-		playerController = "Title",
+		playerController = "Title0",
 		musicSwitch = "0",
 		player = "CAD"
 	},
 	["Spotify"] = {
-		playerController = "Title",
+		playerController = "Title0",
 		musicSwitch = "1",
 		player = "Spotify"
 	},
 	["iTunes"] = {
-		playerController = "Title",
+		playerController = "Title0",
 		musicSwitch = "0",
 		player = "iTunes"
 	},
 	["VLC"] = {
-		playerController = "Title",
+		playerController = "Title0",
 		musicSwitch = "0",
 		player = "CAD"
 	},
 	["WebNowPlaying"] = {
-		playerController = "StateButton",
+		playerController = "StateButton2",
 		musicSwitch = "2",
 		player = "WMP"
 	},
 	["MediaMonkey"] = {
-		playerController = "Title",
+		playerController = "Title0",
 		musicSwitch = "0",
 		player = "MediaMonkey"
 	},
 	["Media Player Classic"] = {
-		playerController = "Title",
+		playerController = "Title0",
 		musicSwitch = "0",
 		player = "WLM"
 	},
 	["J. River Media Center"] = {
-		playerController = "Title",
+		playerController = "Title0",
 		musicSwitch = "0",
 		player = "CAD"
 	},
 	["Winamp"] = {
-		playerController = "Title",
+		playerController = "Title0",
 		musicSwitch = "0",
 		player = "Winamp"
 	},
 	["Zune"] = {
-		playerController = "Title",
+		playerController = "Title0",
 		musicSwitch = "0",
 		player = "WLM"
 	},
 	["AIMP"] = {
-		playerController = "Title",
+		playerController = "Title0",
 		musicSwitch = "0",
 		player = "AIMP"
 	}
