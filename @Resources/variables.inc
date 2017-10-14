@@ -20,7 +20,7 @@ bottomText=mTitle
 
 regularTopTextMeasure=LuaTopText
 regularBottomTextMeasure=LuaBottomText
-disableScroll=1
+disableScroll=0
 
 removeExtraFromText=1
 
