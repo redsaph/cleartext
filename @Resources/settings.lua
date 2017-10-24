@@ -121,7 +121,7 @@ function setPlayer(currentlySet)
 	SKIN:Bang('!WriteKeyValue Variables MusicSwitch ' .. playerTable[currentlySet]['musicSwitch'] .. ' "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables playerController ' .. playerTable[currentlySet]['playerController'] .. ' "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables Player ' .. playerTable[currentlySet]['player'] .. ' "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables currentlySet ' .. currentlySet .. ' "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables currentlySet "' .. currentlySet .. '" "#@#variables.inc"')
 	SKIN:Bang('!UpdateMeter "playerTextDialogSubtitle" "Settings.ini"')
 	SKIN:Bang('!Redraw "Cleartext/Settings" "Settings.ini"')
 end -- ends setPlayer
