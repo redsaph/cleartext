@@ -10,7 +10,7 @@ MusicSwitch=1
 playerController=Title0
 currentlySet=Spotify
 
-adaptiveHideActive=0
+adaptiveHideActive=1
 
 stowAway=0
 stowAwayName=NULL
@@ -24,17 +24,17 @@ disableScroll=0
 
 removeExtraFromText=1
 
-thinFont=Gibson Light
-thickFont=Gibson
+thinFont=Metropolis Extra Light
+thickFont=Metropolis Medium
 
 mediaTextPositionHor=0
 mediaTextAlignment=LeftBottom
 mediaTextAlignmentPure=Left
 interfaceTextAlignment=Right
-nowTextPositionHor=(#Size#*0.19)
-hairlinePositionHor=(#Size#*0.2075)
-topTextPositionHor=(#Size#*0.225)
-playCtrlPositionHor=(#Size#*0.11)
-settingsTextPositionHor=(#Size#*0.125)
+nowTextPositionHor=(#Size#*0.185)
+hairlinePositionHor=(#Size#*0.215)
+topTextPositionHor=(#Size#*0.2475)
+playCtrlPositionHor=(#Size#*0.1)
+settingsTextPositionHor=(#Size#*0.115)
 indicatorPositionHor=(#Size#*0.08)
 indicatorPositionHorPure=(#Size#*0.04)
