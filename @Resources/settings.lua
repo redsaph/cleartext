@@ -49,7 +49,7 @@ playerTable = {
 	["WebNowPlaying"] = {
 		playerController = "StateButton2",
 		musicSwitch = "2",
-		player = "WMP"
+		player = "iTunes"
 	},
 	["MediaMonkey"] = {
 		playerController = "Title0",
@@ -124,6 +124,8 @@ function switchPlayer(currentlySet)
 
 	if currentlySet == 'Spotify' then
 		SKIN:Bang('!WriteKeyValue Variables activePlugin Spotify #@#variables.inc')
+	elseif currentlySet == 'WebNowPlaying' then
+		SKIN:Bang('!WriteKeyValue Variables activePlugin WebNowPlaying #@#variables.inc')
 	else
 		SKIN:Bang('!WriteKeyValue Variables activePlugin NowPlaying #@#variables.inc')
 	end

@@ -25,20 +25,25 @@ function Update()
   currentPlayer = SKIN:GetVariable('currentlySetName')
 	nowPlayingStatus = SKIN:GetMeasure('mStatus0'):GetValue()
   spotifyStatus = SKIN:GetMeasure('mStatus1'):GetValue()
+  webNowPlayingStatus = SKIN:GetMeasure('mStatus2'):GetValue()
 
-  print ('Spotify ' .. spotifyStatus .. ' Now Playing ' .. 
-  nowPlayingStatus .. '\t Plugin: ' .. activePlugin .. '\t Player: ' .. currentPlayer)
+  -- print ('Spotify ' .. spotifyStatus .. ' Now Playing ' .. 
+  -- nowPlayingStatus .. ' Web ' .. webNowPlayingStatus .. '\t Plugin: ' .. activePlugin .. '\t Player: ' .. currentPlayer)
 
-  if not (nowPlayingStatus == 1 and spotifyStatus == 1) then
+  if not (nowPlayingStatus == 1 and spotifyStatus == 1) and not (webNowPlayingStatus == 1 and spotifyStatus == 1) then
     if activePlugin ~= 'Spotify' and spotifyStatus == 1 then
       switchPlayer('Spotify')
+      refreshCleartext()
+    elseif activePlugin ~= 'WebNowPlaying' and webNowPlayingStatus == 1 then
+      switchPlayer('WebNowPlaying')
       refreshCleartext()
     elseif activePlugin == 'Spotify' and nowPlayingStatus == 1 then
       switchPlayer(currentPlayer)
       refreshCleartext()
     end -- end player active check
   else
-    print ("Both players are open. Please close one to continue.")
+    print ('Two music players are running. Please close one to continue. If closing does not\n' ..
+     'fix the issue, check if its process is closed in the Task Manager.')
   end -- end conflict check
 
 end -- ends Update
