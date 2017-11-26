@@ -5,6 +5,7 @@
 -- Made by Redsaph exclusively for Cleartext
 --
 -- redsaph.ml
+-- github.com/redsaph/cleartext
 --
 -- If you have read this and have the intention
 -- of using this, please do not delete this flower box
@@ -93,8 +94,10 @@ function alignLeft()
 	SKIN:Bang('!WriteKeyValue Variables topTextPositionHor "(#Size#*0.2475)" "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables playCtrlPositionHor "(#Size#*0.1)" "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables settingsTextPositionHor "(#Size#*0.115)" "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables indicatorPositionHor "(#Size#*0.08)" "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables indicatorPositionHor "(#Size#*0.07)" "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables indicatorPositionHorPure "(#Size#*0.04)" "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables conflictIndicatorPositionHor "(#Size#*0.03)" "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables conflictIndicatorPositionHorPure "(#Size#*0.08)" "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables currentlySetAlign left')
 	SKIN:Bang('!WriteKeyValue Variables alignRight 0 "#@#variables.inc"')
 	SKIN:Bang('!Refresh #CURRENTCONFIG#')	
@@ -110,8 +113,10 @@ function alignRight()
 	SKIN:Bang('!WriteKeyValue Variables topTextPositionHor "(#Size#*0.855)" "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables playCtrlPositionHor "(#Size#*1.0)" "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables settingsTextPositionHor "(#Size#*0.98)" "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables indicatorPositionHor "(#Size#*1.02)" "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables indicatorPositionHor "(#Size#*1.03)" "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables indicatorPositionHorPure "(#Size#*0.97)" "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables conflictIndicatorPositionHor "(#Size#*1.07)" "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables conflictIndicatorPositionHorPure "(#Size#*0.93)" "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables currentlySetAlign right')
 	SKIN:Bang('!WriteKeyValue Variables alignRight 1 "#@#variables.inc"')
 	SKIN:Bang('!Refresh #CURRENTCONFIG#')

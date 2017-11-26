@@ -5,6 +5,7 @@
 -- Made by Redsaph exclusively for Cleartext
 --
 -- redsaph.ml
+-- github.com/redsaph/cleartext
 --
 -- If you have read this and have the intention
 -- of using this, please do not delete this flower box
