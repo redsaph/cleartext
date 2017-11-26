@@ -3,12 +3,15 @@
 Player=Spotify
 alignRight=0
 
+activePlugin=Spotify
+
 Size=(#WORKAREAWIDTH#*0.3)
 
 ; 0 = MUSIC, 1 = SPOTIFY, 2 = WEBNOWPLAYING
 MusicSwitch=1
 playerController=Title0
-currentlySet=Spotify
+currentlySetName=Windows Media Player
+currentlySetPlayer=WMP
 
 adaptiveHideActive=1
 
