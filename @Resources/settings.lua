@@ -117,11 +117,25 @@ function alignRight()
 	SKIN:Bang('!Refresh #CURRENTCONFIG#')
 end -- ends alignRight
 
-function setPlayer(currentlySet)
+function switchPlayer(currentlySet)
 	SKIN:Bang('!WriteKeyValue Variables MusicSwitch ' .. playerTable[currentlySet]['musicSwitch'] .. ' "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables playerController ' .. playerTable[currentlySet]['playerController'] .. ' "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables Player ' .. playerTable[currentlySet]['player'] .. ' "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables currentlySet "' .. currentlySet .. '" "#@#variables.inc"')
+
+	if currentlySet == 'Spotify' then
+		SKIN:Bang('!WriteKeyValue Variables activePlugin Spotify #@#variables.inc')
+	else
+		SKIN:Bang('!WriteKeyValue Variables activePlugin NowPlaying #@#variables.inc')
+	end
+
+	print('Setting ' .. currentlySet)
+end -- ends switchPlayer
+
+
+function setPlayer(selectedPlayerName)
+	SKIN:Bang('!WriteKeyValue Variables currentlySetName "' .. selectedPlayerName .. '" "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables currentlySetPlayer ' .. playerTable[selectedPlayer]['player'] .. ' "#@#variables.inc"')
+	
 	SKIN:Bang('!UpdateMeter "playerTextDialogSubtitle" "Settings.ini"')
 	SKIN:Bang('!Redraw "Cleartext/Settings" "Settings.ini"')
 end -- ends setPlayer
@@ -149,11 +163,11 @@ function refreshCleartext()
 --	print('alignment: ' .. alignment)
 --	print('width: ' .. width)
 	
-	if alignment == 'right' then
-		alignRight()
-	elseif alignment == 'left' then
-		alignLeft()
-	end
+	-- if alignment == 'right' then
+	-- 	alignRight()
+	-- elseif alignment == 'left' then
+	-- 	alignLeft()
+	-- end
 	
 end -- ends refreshCleartext
 
