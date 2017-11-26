@@ -44,8 +44,8 @@ function Update()
     end -- end player active check
     return 1
   else
-    error ('Two music players are running. Please close one to continue. If closing does not ' ..
-     'fix the issue, check if its process is closed in the Task Manager.')
+    -- error ('Two music players are running. Please close one to continue. If closing does not ' ..
+    --  'fix the issue, check if its process is closed in the Task Manager.')
     return 2
   end -- end conflict check
 
