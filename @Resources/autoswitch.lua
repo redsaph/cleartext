@@ -41,9 +41,11 @@ function Update()
       switchPlayer(currentPlayer)
       refreshCleartext()
     end -- end player active check
+    return 1
   else
-    print ('Two music players are running. Please close one to continue. If closing does not\n' ..
+    error ('Two music players are running. Please close one to continue. If closing does not ' ..
      'fix the issue, check if its process is closed in the Task Manager.')
+    return 2
   end -- end conflict check
 
 end -- ends Update
