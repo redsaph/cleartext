@@ -134,7 +134,7 @@ end -- ends switchPlayer
 
 function setPlayer(selectedPlayerName)
 	SKIN:Bang('!WriteKeyValue Variables currentlySetName "' .. selectedPlayerName .. '" "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables currentlySetPlayer ' .. playerTable[selectedPlayer]['player'] .. ' "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables currentlySetPlayer ' .. playerTable[selectedPlayerName]['player'] .. ' "#@#variables.inc"')
 	
 	SKIN:Bang('!UpdateMeter "playerTextDialogSubtitle" "Settings.ini"')
 	SKIN:Bang('!Redraw "Cleartext/Settings" "Settings.ini"')
