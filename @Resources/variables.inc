@@ -1,11 +1,14 @@
 [Variables]
 
+skinSize=(#SCREENAREAHEIGHT#*0.5)
+bottomTextWidth=157
+
+
 Player=Spotify
 alignRight=0
 
 activePlugin=Spotify
 
-Size=(#WORKAREAWIDTH#*0.3)
 
 ; 0 = MUSIC, 1 = SPOTIFY, 2 = WEBNOWPLAYING
 MusicSwitch=1
@@ -13,7 +16,7 @@ playerController=Title0
 currentlySetName=Windows Media Player
 currentlySetPlayer=WMP
 
-adaptiveHideActive=1
+adaptiveHideActive=0
 
 stowAway=0
 stowAwayName=NULL
@@ -21,11 +24,9 @@ stowAwayName=NULL
 topText=mArtist
 bottomText=mTitle
 
-regularTopTextMeasure=LuaTopText
-regularBottomTextMeasure=LuaBottomText
 disableScroll=0
 
-removeExtraFromText=1
+removeExtraFromText=0
 
 thinFont=Metropolis Extra Light
 thickFont=Metropolis Medium
@@ -34,12 +35,12 @@ mediaTextPositionHor=0
 mediaTextAlignment=LeftBottom
 mediaTextAlignmentPure=Left
 interfaceTextAlignment=Right
-nowTextPositionHor=(#Size#*0.185)
-hairlinePositionHor=(#Size#*0.215)
-topTextPositionHor=(#Size#*0.2475)
-playCtrlPositionHor=(#Size#*0.1)
-settingsTextPositionHor=(#Size#*0.115)
-indicatorPositionHor=(#Size#*0.07)
-indicatorPositionHorPure=(#Size#*0.04)
-conflictIndicatorPositionHor=(#Size#*0.03)
-conflictIndicatorPositionHorPure=(#Size#*0.08)
+nowTextPositionHor=(#skinSize#*0.19)
+hairlinePositionHor=(#skinSize#*0.22)
+topTextPositionHor=(#skinSize#*0.25)
+playCtrlPositionHor=(#skinSize#*0.11)
+settingsTextPositionHor=(#skinSize#*0.115)
+indicatorPositionHor=(#skinSize#*0.08)
+indicatorPositionHorPure=(#skinSize#*0.04)
+conflictIndicatorPositionHor=(#skinSize#*0.04)
+conflictIndicatorPositionHorPure=(#skinSize#*0.08)
