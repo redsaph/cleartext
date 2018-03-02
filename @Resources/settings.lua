@@ -13,7 +13,7 @@
 --
 -- Thank you very much.
 --
--- Last modified by Redsaph on October 10, 2017
+-- Last modified by Redsaph on February 16, 2018
 --
 
 playerTable = {
@@ -89,34 +89,45 @@ function alignLeft()
 	SKIN:Bang('!WriteKeyValue Variables mediaTextAlignment "LeftBottom" "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables mediaTextAlignmentPure "Left" "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables interfaceTextAlignment "Right" "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables nowTextPositionHor "(#Size#*0.185)" "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables hairlinePositionHor "(#Size#*0.215)" "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables topTextPositionHor "(#Size#*0.2475)" "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables playCtrlPositionHor "(#Size#*0.1)" "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables settingsTextPositionHor "(#Size#*0.115)" "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables indicatorPositionHor "(#Size#*0.07)" "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables indicatorPositionHorPure "(#Size#*0.04)" "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables conflictIndicatorPositionHor "(#Size#*0.03)" "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables conflictIndicatorPositionHorPure "(#Size#*0.08)" "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables nowTextPositionHor "(#skinSize#*0.185)" "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables hairlinePositionHor "(#skinSize#*0.215)" "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables topTextPositionHor "(#skinSize#*0.2475)" "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables playCtrlPositionHor "(#skinSize#*0.1)" "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables settingsTextPositionHor "(#skinSize#*0.115)" "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables indicatorPositionHor "(#skinSize#*0.07)" "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables indicatorPositionHorPure "(#skinSize#*0.04)" "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables conflictIndicatorPositionHor "(#skinSize#*0.03)" "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables conflictIndicatorPositionHorPure "(#skinSize#*0.08)" "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables currentlySetAlign left')
 	SKIN:Bang('!WriteKeyValue Variables alignRight 0 "#@#variables.inc"')
 	SKIN:Bang('!Refresh #CURRENTCONFIG#')	
 end -- ends alignLeft
 
-function alignRight()	
-	SKIN:Bang('!WriteKeyValue Variables mediaTextPositionHor "#SIZE#" "#@#variables.inc"')
+function alignRight()
+	skinSize = SKIN:ParseFormula(SKIN:GetVariable('skinSize'))
+	bottomTextWidth = tonumber(SKIN:GetVariable('bottomTextWidth'))
+
+	if bottomTextWidth > skinSize then
+		multiplier = bottomTextWidth
+	else
+		multiplier = skinSize
+	end
+
+	SKIN:Bang('!WriteKeyValue Variables mediaTextPositionHor "#skinSize#" "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables mediaTextAlignment "RightBottom" "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables mediaTextAlignmentPure "Right" "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables interfaceTextAlignment "Left" "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables nowTextPositionHor "(#Size#*0.915)" "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables hairlinePositionHor "(#Size#*0.8825)" "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables topTextPositionHor "(#Size#*0.855)" "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables playCtrlPositionHor "(#Size#*1.0)" "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables settingsTextPositionHor "(#Size#*0.98)" "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables indicatorPositionHor "(#Size#*1.03)" "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables indicatorPositionHorPure "(#Size#*0.97)" "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables conflictIndicatorPositionHor "(#Size#*1.07)" "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables conflictIndicatorPositionHorPure "(#Size#*0.93)" "#@#variables.inc"')
+
+	SKIN:Bang('!WriteKeyValue Variables nowTextPositionHor "(' .. multiplier .. '+(' .. skinSize ..'*0.15))" "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables hairlinePositionHor "(' .. multiplier .. '+(' .. skinSize ..'*0.12))" "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables topTextPositionHor "(' .. multiplier .. '+(' .. skinSize ..'*0.09))" "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables playCtrlPositionHor "(' .. multiplier .. '+(' .. skinSize ..'*0.235))" "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables settingsTextPositionHor "(' .. multiplier .. '+(' .. skinSize ..'*0.225))" "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables indicatorPositionHor "(' .. multiplier .. '+(' .. skinSize ..'*0.265))" "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables indicatorPositionHorPure "(#skinSize#*0.97)" "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables conflictIndicatorPositionHor "(' .. multiplier .. '+(' .. skinSize ..'*0.21))" "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables conflictIndicatorPositionHorPure "(#skinSize#*0.93)" "#@#variables.inc"')
+
 	SKIN:Bang('!WriteKeyValue Variables currentlySetAlign right')
 	SKIN:Bang('!WriteKeyValue Variables alignRight 1 "#@#variables.inc"')
 	SKIN:Bang('!Refresh #CURRENTCONFIG#')
