@@ -30,6 +30,7 @@ removeExtraFromText=0
 
 thinFont=Metropolis Extra Light
 thickFont=Metropolis Medium
+controlsFont=Metropolis Medium
 
 mediaTextPositionHor=0
 mediaTextAlignment=LeftBottom
