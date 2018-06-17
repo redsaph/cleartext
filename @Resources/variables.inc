@@ -1,7 +1,7 @@
 [Variables]
 
 skinSize=(#SCREENAREAHEIGHT#*0.5)
-bottomTextWidth=465
+bottomTextWidth=1112
 
 
 Player=Spotify
