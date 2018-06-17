@@ -33,7 +33,7 @@ playerTable = {
 		player = "CAD"
 	},
 	["Spotify"] = {
-		playerController = "Title0",
+		playerController = "Title1",
 		musicSwitch = "1",
 		player = "Spotify"
 	},
