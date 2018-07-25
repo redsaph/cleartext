@@ -1,19 +1,19 @@
 [Variables]
 
 skinSize=(#SCREENAREAHEIGHT#*0.5)
-bottomTextWidth=218
+bottomTextWidth=483
 
 
 Player=Spotify
 alignRight=0
 
-activePlugin=Spotify
+activePlugin=NowPlaying
 
 
-; 0 = MUSIC, 1 = SPOTIFY, 2 = WEBNOWPLAYING
-MusicSwitch=1
-playerController=Title1
-currentlySetName=Windows Media Player
+; 0 = MUSIC, 2 = WEBNOWPLAYING
+MusicSwitch=2
+playerController=StateButton2
+currentlySetName=WebNowPlaying
 currentlySetPlayer=WMP
 
 adaptiveHideActive=0

@@ -13,7 +13,7 @@
 --
 -- Thank you very much.
 --
--- Last modified by Redsaph on February 16, 2018
+-- Last modified by Redsaph on July 26, 2018
 --
 
 playerTable = {
@@ -32,11 +32,11 @@ playerTable = {
 		musicSwitch = "0",
 		player = "CAD"
 	},
-	["Spotify"] = {
-		playerController = "Title1",
-		musicSwitch = "1",
-		player = "Spotify"
-	},
+-- ["Spotify"] = {
+-- 	playerController = "Title0",
+-- 	musicSwitch = "2",
+-- 	player = "Spotify"
+-- },
 	["iTunes"] = {
 		playerController = "Title0",
 		musicSwitch = "0",
@@ -50,7 +50,7 @@ playerTable = {
 	["WebNowPlaying"] = {
 		playerController = "StateButton2",
 		musicSwitch = "2",
-		player = "iTunes"
+		player = "Spotify"
 	},
 	["MediaMonkey"] = {
 		playerController = "Title0",
@@ -133,26 +133,26 @@ function alignRight()
 	SKIN:Bang('!Refresh #CURRENTCONFIG#')
 end -- ends alignRight
 
-function switchPlayer(currentlySet)
-	SKIN:Bang('!WriteKeyValue Variables MusicSwitch ' .. playerTable[currentlySet]['musicSwitch'] .. ' "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables playerController ' .. playerTable[currentlySet]['playerController'] .. ' "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables Player ' .. playerTable[currentlySet]['player'] .. ' "#@#variables.inc"')
+-- function switchPlayer(currentlySet)
+-- 	SKIN:Bang('!WriteKeyValue Variables MusicSwitch ' .. playerTable[currentlySet]['musicSwitch'] .. ' "#@#variables.inc"')
+-- 	SKIN:Bang('!WriteKeyValue Variables playerController ' .. playerTable[currentlySet]['playerController'] .. ' "#@#variables.inc"')
+-- 	SKIN:Bang('!WriteKeyValue Variables Player ' .. playerTable[currentlySet]['player'] .. ' "#@#variables.inc"')
 
-	if currentlySet == 'Spotify' then
-		SKIN:Bang('!WriteKeyValue Variables activePlugin Spotify #@#variables.inc')
-	elseif currentlySet == 'WebNowPlaying' then
-		SKIN:Bang('!WriteKeyValue Variables activePlugin WebNowPlaying #@#variables.inc')
-	else
-		SKIN:Bang('!WriteKeyValue Variables activePlugin NowPlaying #@#variables.inc')
-	end
+-- 	if currentlySet == 'WebNowPlaying' then
+-- 		SKIN:Bang('!WriteKeyValue Variables activePlugin WebNowPlaying #@#variables.inc')
+-- 	else
+-- 		SKIN:Bang('!WriteKeyValue Variables activePlugin NowPlaying #@#variables.inc')
+-- 	end
 
-	print('Setting ' .. currentlySet)
-end -- ends switchPlayer
+-- 	print('Setting ' .. currentlySet)
+-- end -- ends switchPlayer
 
 
 function setPlayer(selectedPlayerName)
 	SKIN:Bang('!WriteKeyValue Variables currentlySetName "' .. selectedPlayerName .. '" "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables currentlySetPlayer ' .. playerTable[selectedPlayerName]['player'] .. ' "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables Player ' .. playerTable[selectedPlayerName]['player'] .. ' "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables MusicSwitch ' .. playerTable[selectedPlayerName]['musicSwitch'] .. ' "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables playerController ' .. playerTable[selectedPlayerName]['playerController'] .. ' "#@#variables.inc"')
 	
 	SKIN:Bang('!UpdateMeter "playerTextDialogSubtitle" "Settings.ini"')
 	SKIN:Bang('!Redraw "Cleartext/Settings" "Settings.ini"')
