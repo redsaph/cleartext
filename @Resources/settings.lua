@@ -32,11 +32,11 @@ playerTable = {
 		musicSwitch = "0",
 		player = "CAD"
 	},
--- ["Spotify"] = {
--- 	playerController = "Title0",
--- 	musicSwitch = "2",
--- 	player = "Spotify"
--- },
+	["Spotify (NowPlaying)"] = {
+		playerController = "Title0",
+		musicSwitch = "0",
+		player = "Spotify"
+	},
 	["iTunes"] = {
 		playerController = "Title0",
 		musicSwitch = "0",
