@@ -1,16 +1,15 @@
 [Variables]
 
 skinSize=(#SCREENAREAHEIGHT#*0.5)
-
-topTextWidth=513
-bottomTextWidth=739
-lastSetWidth=739
+lastSetWidth=674
 
 Player=Spotify
 alignRight=1
 
 activePlugin=NowPlaying
 
+topTextWidth=344
+bottomTextWidth=674
 
 ; 0 = MUSIC, 2 = WEBNOWPLAYING
 MusicSwitch=2
@@ -38,12 +37,12 @@ mediaTextPositionHor=540
 mediaTextAlignment=RightBottom
 mediaTextAlignmentPure=Right
 interfaceTextAlignment=Left
-nowTextPositionHor=820
-hairlinePositionHor=803.8
-topTextPositionHor=787.6
-playCtrlPositionHor=865.9
-settingsTextPositionHor=860.5
-indicatorPositionHor=882.1
+nowTextPositionHor=755
+hairlinePositionHor=738.8
+topTextPositionHor=722.6
+playCtrlPositionHor=800.9
+settingsTextPositionHor=795.5
+indicatorPositionHor=817.1
 indicatorPositionHorPure=523.8
-conflictIndicatorPositionHor=852.4
+conflictIndicatorPositionHor=787.4
 conflictIndicatorPositionHorPure=502.2

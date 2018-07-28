@@ -90,9 +90,7 @@ function alignRightOnUpdate()
 	alignRightValue = tonumber(SKIN:GetVariable('alignRight'))	
 	bottomTextWidth = tonumber(SKIN:GetMeasure('mBottomTextWidth'):GetValue())
 	topTextWidth = tonumber(SKIN:GetMeasure('mTopTextWidth'):GetValue())
-
 	widest = getLargestNumber(bottomTextWidth, topTextWidth)
-
 	lastSetWidth = tonumber(SKIN:GetVariable('lastSetWidth'))
 	
 	-- print ('BEFORE// Largest: ' .. widest .. ', lastSet: ' .. lastSetWidth)
