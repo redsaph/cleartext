@@ -86,7 +86,7 @@ playerTable = {
 
 function Initialize()
 	dofile(SKIN:GetVariable('@')..'align.lua')
-  end -- ends Initialize
+end -- ends Initialize
 
 -- function switchPlayer(currentlySet)
 -- 	SKIN:Bang('!WriteKeyValue Variables MusicSwitch ' .. playerTable[currentlySet]['musicSwitch'] .. ' "#@#variables.inc"')
@@ -113,33 +113,33 @@ function setPlayer(selectedPlayerName)
 	SKIN:Bang('!Redraw "Cleartext/Settings" "Settings.ini"')
 end -- ends setPlayer
 
--- function refreshCleartext()
--- 	SKIN:Bang('!Refresh #CURRENTCONFIG#')
--- 	alignment = SKIN:GetVariable('currentlySetAlign')
--- --	width = SKIN:GetVariable('size')
+function refreshCleartext()
+	SKIN:Bang('!Refresh #CURRENTCONFIG#')
+	alignment = SKIN:GetVariable('currentlySetAlign')
+--	width = SKIN:GetVariable('size')
 	
--- 	SKIN:Bang('!HideMeterGroup resizeDialog')
--- 	SKIN:Bang('!HideMeterGroup unpDirectoryDialog')
--- 	SKIN:Bang('!HideMeterGroup themeDialog')
--- 	SKIN:Bang('!HideMeterGroup adaptiveDialog')
--- 	SKIN:Bang('!HideMeterGroup bottomTextDialog')
--- 	SKIN:Bang('!HideMeterGroup topTextDialog')
--- 	SKIN:Bang('!HideMeterGroup stowDialog')
--- 	SKIN:Bang('!HideMeterGroup playerDialog')
--- 	SKIN:Bang('!ShowMeterGroup buttons')
--- 	SKIN:Bang('!HideMeterGroup dialogDesign')
--- 	SKIN:Bang('!DisableMeasure "mInput"')
--- 	SKIN:Bang('!Refresh #CURRENTCONFIG#')
--- 	SKIN:Bang('!Refresh "Cleartext" "Cleartext.ini"')
--- 	SKIN:Bang('!Redraw "Cleartext" "Cleartext.ini"')
+	SKIN:Bang('!HideMeterGroup resizeDialog')
+	SKIN:Bang('!HideMeterGroup unpDirectoryDialog')
+	SKIN:Bang('!HideMeterGroup themeDialog')
+	SKIN:Bang('!HideMeterGroup adaptiveDialog')
+	SKIN:Bang('!HideMeterGroup bottomTextDialog')
+	SKIN:Bang('!HideMeterGroup topTextDialog')
+	SKIN:Bang('!HideMeterGroup stowDialog')
+	SKIN:Bang('!HideMeterGroup playerDialog')
+	SKIN:Bang('!ShowMeterGroup buttons')
+	SKIN:Bang('!HideMeterGroup dialogDesign')
+	SKIN:Bang('!DisableMeasure "mInput"')
+	SKIN:Bang('!Refresh #CURRENTCONFIG#')
+	SKIN:Bang('!Refresh "Cleartext" "Cleartext.ini"')
+	SKIN:Bang('!Redraw "Cleartext" "Cleartext.ini"')
 	
--- --	print('alignment: ' .. alignment)
--- --	print('width: ' .. width)
+--	print('alignment: ' .. alignment)
+--	print('width: ' .. width)
 	
--- 	if alignment == 'right' then
--- 		alignRight()
--- 	elseif alignment == 'left' then
--- 		alignLeft()
--- 	end
+	if alignment == 'right' then
+		alignRight()
+	elseif alignment == 'left' then
+		alignLeft()
+	end
 	
--- end -- ends refreshCleartext
+end -- ends refreshCleartext

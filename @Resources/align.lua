@@ -32,28 +32,32 @@ function alignLeft()
 	SKIN:Bang('!WriteKeyValue Variables conflictIndicatorPositionHorPure "(#skinSize#*0.08)" "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables currentlySetAlign left')
 	SKIN:Bang('!WriteKeyValue Variables alignRight 0 "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables lastSetWidth "#skinSize#" "#@#variables.inc"')
 	SKIN:Bang('!Refresh #CURRENTCONFIG#')	
 end -- ends alignLeft
 
-function getWidest()
-	bottomTextWidth = tonumber(SKIN:GetMeasure('mBottomTextWidth'):GetValue())
-	topTextWidth = tonumber(SKIN:GetMeasure('mTopTextWidth'):GetValue())
-	
-	if topTextWidth > bottomTextWidth then
-		largestWidth = topTextWidth
-	else 
-		largestWidth = bottomTextWidth
-	end
+function getLargestNumber(a, b)
+	if a > b then
+		return a
+	else
+		return b
+	end -- ends if
+end -- ends getLargestNumber
 
-	return largestWidth
-end -- ends getWidest
+function alignRightOnSettings()
+	bottomTextWidth = tonumber(SKIN:GetVariable('bottomTextWidth'))
+	topTextWidth = tonumber(SKIN:GetVariable('topTextWidth'))
 
-function alignRight()
+	largestWidth = getLargestNumber(bottomTextWidth, topTextWidth)
+
+	alignRightCore(largestWidth)
+end
+
+function alignRightCore(widest)
 	skinSize = SKIN:ParseFormula(SKIN:GetVariable('skinSize'))
-	widest = getWidest()
 
 	if widest > skinSize then
-		multiplier = largestWidth
+		multiplier = widest
 	else
 		multiplier = skinSize
 	end
@@ -73,6 +77,7 @@ function alignRight()
 	SKIN:Bang('!WriteKeyValue Variables conflictIndicatorPositionHor "(' .. multiplier .. '+(' .. skinSize ..'*0.21))" "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables conflictIndicatorPositionHorPure "(#skinSize#*0.93)" "#@#variables.inc"')
 
+	SKIN:Bang('!WriteKeyValue Variables lastSetWidth ' .. multiplier .. ' "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables currentlySetAlign right')
 	SKIN:Bang('!WriteKeyValue Variables alignRight 1 "#@#variables.inc"')
 
@@ -83,18 +88,19 @@ end -- ends alignRight
 
 function alignRightOnUpdate()
 	alignRightValue = tonumber(SKIN:GetVariable('alignRight'))	
-	widest = getWidest()
+	bottomTextWidth = tonumber(SKIN:GetMeasure('mBottomTextWidth'):GetValue())
+	topTextWidth = tonumber(SKIN:GetMeasure('mTopTextWidth'):GetValue())
+
+	widest = getLargestNumber(bottomTextWidth, topTextWidth)
+
 	lastSetWidth = tonumber(SKIN:GetVariable('lastSetWidth'))
 	
 	-- print ('BEFORE// Largest: ' .. widest .. ', lastSet: ' .. lastSetWidth)
 
-	if alignRightValue == 1 and widest > lastSetWidth then
-		SKIN:Bang('!WriteKeyValue Variables lastSetWidth ' .. widest)
-		
-		alignRight()	
+	if alignRightValue == 1 and widest > lastSetWidth then		
+		alignRightCore(widest)	
 		
 		-- lastSetWidth = tonumber(SKIN:GetVariable('lastSetWidth'))
 		-- print ('AFTER// Largest: ' .. largestWidth .. ', lastSet: ' .. lastSetWidth)
-	end -- ends if statement
-	
+	end -- ends if statement	
 end -- ends Update
