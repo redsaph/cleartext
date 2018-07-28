@@ -1,6 +1,6 @@
 [Variables]
 
-currentVersion=510
+currentVersion=511
 
 baseColumn1=42
 baseColumn2=220

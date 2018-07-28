@@ -1,11 +1,10 @@
 [Variables]
 
 skinSize=(#SCREENAREAHEIGHT#*0.5)
-bottomTextWidth=570
 
 
 Player=Spotify
-alignRight=0
+alignRight=1
 
 activePlugin=NowPlaying
 
@@ -32,16 +31,16 @@ thinFont=Metropolis Extra Light
 thickFont=Metropolis Medium
 controlsFont=Metropolis Medium
 
-mediaTextPositionHor=0
-mediaTextAlignment=LeftBottom
-mediaTextAlignmentPure=Left
-interfaceTextAlignment=Right
-nowTextPositionHor=(#skinSize#*0.19)
-hairlinePositionHor=(#skinSize#*0.22)
-topTextPositionHor=(#skinSize#*0.25)
-playCtrlPositionHor=(#skinSize#*0.11)
-settingsTextPositionHor=(#skinSize#*0.115)
-indicatorPositionHor=(#skinSize#*0.08)
-indicatorPositionHorPure=(#skinSize#*0.04)
-conflictIndicatorPositionHor=(#skinSize#*0.04)
-conflictIndicatorPositionHorPure=(#skinSize#*0.08)
+mediaTextPositionHor=540
+mediaTextAlignment=RightBottom
+mediaTextAlignmentPure=Right
+interfaceTextAlignment=Left
+nowTextPositionHor=1345
+hairlinePositionHor=1328.8
+topTextPositionHor=1312.6
+playCtrlPositionHor=1390.9
+settingsTextPositionHor=1385.5
+indicatorPositionHor=1407.1
+indicatorPositionHorPure=523.8
+conflictIndicatorPositionHor=1377.4
+conflictIndicatorPositionHorPure=502.2
