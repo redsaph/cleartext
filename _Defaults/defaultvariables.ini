@@ -11,7 +11,7 @@ activePlugin=NowPlaying
 topTextWidth=551
 bottomTextWidth=160
 
-; 0 = MUSIC, 2 = WEBNOWPLAYING
+; 0 = MUSIC, 1=GPMDP, 2 = WEBNOWPLAYING
 MusicSwitch=0
 playerController=Title0
 currentlySetName=Windows Media Player

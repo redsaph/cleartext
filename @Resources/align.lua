@@ -4,7 +4,7 @@
 -- ALIGNMENT MODULE
 -- Made by Redsaph exclusively for Cleartext
 --
--- redsaph.ml
+-- redsaph.xyz
 -- github.com/redsaph/cleartext
 --
 -- If you have read this and have the intention
