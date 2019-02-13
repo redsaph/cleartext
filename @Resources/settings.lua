@@ -4,7 +4,7 @@
 -- SETTINGS MODULE
 -- Made by Redsaph exclusively for Cleartext
 --
--- redsaph.ml
+-- redsaph.xyz
 -- github.com/redsaph/cleartext
 --
 -- If you have read this and have the intention
@@ -13,7 +13,7 @@
 --
 -- Thank you very much.
 --
--- Last modified by Redsaph on July 28, 2018
+-- Last modified by Redsaph on February 13, 2019
 --
 
 playerTable = {
@@ -50,6 +50,11 @@ playerTable = {
 	["WebNowPlaying"] = {
 		playerController = "StateButton2",
 		musicSwitch = "2",
+		player = "Spotify"
+	},
+	["GPMDP"] = {
+		playerController = "StateButton1",
+		musicSwitch = "1",
 		player = "Spotify"
 	},
 	["MediaMonkey"] = {
