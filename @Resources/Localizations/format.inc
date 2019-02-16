@@ -46,11 +46,13 @@ set_btn_font_thick
 set_btn_font_ctrl
 set_btn_name_artist
 set_btn_name_album
-set_btn_name_artist
+set_btn_name_title
 
 set_tip_help
 set_tip_close
+set_tip_progress_bar
 set_tip_done         =
+set_tip_reset        =
 
 set_stat_left
 set_stat_right
@@ -58,6 +60,7 @@ set_stat_enabled
 set_stat_disabled
 
 set_desc_align_text
+set_desc_align_text_2 =
 set_desc_change_fonts
 set_desc_change_media
 set_desc_resize

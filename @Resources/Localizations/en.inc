@@ -50,6 +50,7 @@ set_btn_name_title   = Song title
 
 set_tip_help         = Get help -- read the support documentation (internet connection required)
 set_tip_close        = Close Settings
+set_tip_progress     = Progress bar
 set_tip_done         = Refreshing will take effect once this button is pressed.
 set_tip_reset        = Refreshing will take effect once the Done button is pressed.
 
@@ -59,6 +60,7 @@ set_stat_enabled     = enabled
 set_stat_disabled    = disabled
 
 set_desc_align_text      = Align Cleartext to the left or right to match its position on your screen. It is currently on the
+set_desc_align_text_2    = ""
 set_desc_change_fonts    = Change the fonts used in Cleartext and Cleartext Pure with fonts installed in your PC. Enter the font name as displayed by Windows.
 set_desc_change_media    = Currently set player
 set_desc_resize          = Enter the height of Cleartext in pixels. Width and contents will adjust accordingly. Press the Enter key when finished inputting the desired height.
