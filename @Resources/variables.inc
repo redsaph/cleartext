@@ -2,6 +2,7 @@
 
 skinSize=(#SCREENAREAHEIGHT#*0.5)
 lastSetWidth=540
+language=en
 
 Player=WMP
 alignRight=0
