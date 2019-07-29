@@ -8,13 +8,13 @@ alignRight=0
 
 activePlugin=NowPlaying
 
-topTextWidth=551
-bottomTextWidth=160
+topTextWidth=200
+bottomTextWidth=200
 
 ; 0 = MUSIC, 1=GPMDP, 2 = WEBNOWPLAYING
-MusicSwitch=0
-playerController=Title0
-currentlySetName=Windows Media Player
+MusicSwitch=2
+playerController=StateButton2
+currentlySetName=WebNowPlaying
 currentlySetPlayer=WMP
 
 adaptiveHideActive=0
@@ -37,12 +37,13 @@ mediaTextPositionHor=0
 mediaTextAlignment=LeftBottom
 mediaTextAlignmentPure=Left
 interfaceTextAlignment=Right
-nowTextPositionHor=(#skinSize#*0.19)
-hairlinePositionHor=(#skinSize#*0.22)
-topTextPositionHor=(#skinSize#*0.25)
-playCtrlPositionHor=(#skinSize#*0.11)
-settingsTextPositionHor=(#skinSize#*0.115)
-indicatorPositionHor=(#skinSize#*0.08)
-indicatorPositionHorPure=(#skinSize#*0.04)
-conflictIndicatorPositionHor=(#skinSize#*0.04)
-conflictIndicatorPositionHorPure=(#skinSize#*0.08)
+nowTextPositionHor=99.9
+hairlinePositionHor=116.1
+topTextPositionHor=133.65
+playCtrlPositionHor=54
+settingsTextPositionHor=62.1
+indicatorPositionHor=37.8
+indicatorPositionHorPure=21.6
+conflictIndicatorPositionHor=16.2
+conflictIndicatorPositionHorPure=43.2
+textContainerOffsetHor=(-(#skinSize#)*1.09)
