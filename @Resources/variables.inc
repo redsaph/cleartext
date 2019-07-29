@@ -8,9 +8,6 @@ alignRight=0
 
 activePlugin=NowPlaying
 
-topTextWidth=200
-bottomTextWidth=200
-
 ; 0 = MUSIC, 1=GPMDP, 2 = WEBNOWPLAYING
 MusicSwitch=2
 playerController=StateButton2
