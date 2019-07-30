@@ -44,6 +44,53 @@ function getLargestNumber(a, b)
 	end -- ends if
 end -- ends getLargestNumber
 
+function alignCenter()
+	-- PROGRESS BAR
+	SKIN:Bang('!WriteKeyValue Variables orientation_progressbar "Horizontal" "#@#positions.inc"')
+	SKIN:Bang('!WriteKeyValue Variables width_progressbar "(#skinSize#+(#skinSize#*0.33))" "#@#positions.inc"')
+	SKIN:Bang('!WriteKeyValue Variables height_progressbar "(#skinSize#*0.005)" "#@#positions.inc"')
+	SKIN:Bang('!WriteKeyValue Variables xpos_progressbar "(#skinSize#*0.01)" "#@#positions.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ypos_progressbar "(#skinSize#*0.11)" "#@#positions.inc"')
+	-- NOW
+	SKIN:Bang('!WriteKeyValue Variables xpos_now "(#skinSize#*0.65)" "#@#positions.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ypos_now "(#skinSize#*0.06)" "#@#positions.inc"')
+	-- PLAYING
+	SKIN:Bang('!WriteKeyValue Variables xpos_playing "(#skinSize#*0.835)" "#@#positions.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ypos_playing "(#skinSize#*0.06)" "#@#positions.inc"')
+	-- TIME
+	SKIN:Bang('!WriteKeyValue Variables xpos_time "(#skinSize#*0.5)" "#@#positions.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ypos_time "(#skinSize#*0.07)" "#@#positions.inc"')
+	-- PROGRESS
+	SKIN:Bang('!WriteKeyValue Variables xpos_progress "(#skinSize#*1.04)" "#@#positions.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ypos_progress "(#skinSize#*0.07)" "#@#positions.inc"')
+	-- SETTINGS
+	SKIN:Bang('!WriteKeyValue Variables xpos_settings "(#skinSize#*0.965)" "#@#positions.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ypos_settings "(#skinSize#*0.07)" "#@#positions.inc"')
+	-- PLAY BUTTON
+	SKIN:Bang('!WriteKeyValue Variables xpos_play "(#skinSize#*0.725)" "#@#positions.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ypos_play "(#skinSize#*0.02)" "#@#positions.inc"')
+	-- PREVIOUS BUTTON
+	SKIN:Bang('!WriteKeyValue Variables xpos_prev "(#skinSize#*0.575)" "#@#positions.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ypos_prev "(#skinSize#*0.02)" "#@#positions.inc"')
+	-- NEXT BUTTON
+	SKIN:Bang('!WriteKeyValue Variables xpos_next "(#skinSize#*0.845)" "#@#positions.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ypos_next "(#skinSize#*0.02)" "#@#positions.inc"')
+	-- INTERFACE
+	SKIN:Bang('!WriteKeyValue Variables align_interface "Center" "#@#positions.inc"')
+	-- REGULAR: CONTAINERS
+	SKIN:Bang('!WriteKeyValue Variables xpos_container_reg "(#skinSize#*0.0275)" "#@#positions.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ypos_container_reg "(#skinSize#*0.13)" "#@#positions.inc"')
+	SKIN:Bang('!WriteKeyValue Variables width_container_reg "(#skinSize#+(#skinSize#*0.3))" "#@#positions.inc"')
+	-- STD: CONTAINERS
+	SKIN:Bang('!WriteKeyValue Variables width_container_std "(#skinSize#+(#skinSize#*0.09))" "#@#positions.inc"')
+	SKIN:Bang('!WriteKeyValue Variables width_container_scroll "(#skinSize#+(#skinSize#*0.3))" "#@#positions.inc"')
+	SKIN:Bang('!WriteKeyValue Variables height_container_std "(#skinSize#*0.0825)" "#@#positions.inc"')
+	-- CONTAINER TEXT
+	SKIN:Bang('!WriteKeyValue Variables xpos_containertext "(#skinSize#*0.67)" "#@#positions.inc"')
+	SKIN:Bang('!WriteKeyValue Variables align_containertext_supposed "Center" "#@#positions.inc"')
+	SKIN:Bang('!Refresh #CURRENTCONFIG#')	
+end -- ends alignCenter
+
 function alignRightOnSettings()
 	bottomTextWidth = tonumber(SKIN:GetVariable('bottomTextWidth'))
 	topTextWidth = tonumber(SKIN:GetVariable('topTextWidth'))

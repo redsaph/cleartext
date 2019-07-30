@@ -49,9 +49,8 @@ width_container_reg=(#skinSize#+(#skinSize#*0.3))
 
 ; --- STANDARD: CONTAINERS
 width_container_std=(#skinSize#+(#skinSize#*0.09))
+width_container_scroll=(#skinSize#+(#skinSize#*0.3))
 height_container_std=(#skinSize#*0.0825)
 
 xpos_containertext=(#skinSize#*0.67)
-align_containertext_supposed=Left
-align_containertext_topcurrent=Left
-align_containertext_btmcurrent=Left
+align_containertext_supposed=Center
