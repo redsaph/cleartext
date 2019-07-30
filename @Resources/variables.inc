@@ -1,10 +1,11 @@
 [Variables]
 
 skinSize=(#SCREENAREAHEIGHT#*0.5)
-lastSetWidth=540
+lastSetWidth=525
 
-Player=WMP
+Player=Spotify
 alignRight=0
+alignCenter=1
 
 activePlugin=NowPlaying
 
@@ -34,13 +35,12 @@ mediaTextPositionHor=0
 mediaTextAlignment=LeftBottom
 mediaTextAlignmentPure=Left
 interfaceTextAlignment=Right
-nowTextPositionHor=99.9
-hairlinePositionHor=116.1
-topTextPositionHor=133.65
-playCtrlPositionHor=54
-settingsTextPositionHor=62.1
-indicatorPositionHor=37.8
-indicatorPositionHorPure=21.6
-conflictIndicatorPositionHor=16.2
-conflictIndicatorPositionHorPure=43.2
-textContainerOffsetHor=(-(#skinSize#)*1.09)
+nowTextPositionHor=97.125
+hairlinePositionHor=112.875
+topTextPositionHor=129.9375
+playCtrlPositionHor=52.5
+settingsTextPositionHor=60.375
+indicatorPositionHor=36.75
+indicatorPositionHorPure=21
+conflictIndicatorPositionHor=15.75
+conflictIndicatorPositionHorPure=42
