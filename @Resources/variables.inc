@@ -44,3 +44,8 @@ indicatorPositionHor=36.75
 indicatorPositionHorPure=21
 conflictIndicatorPositionHor=15.75
 conflictIndicatorPositionHorPure=42
+
+; --- Dynamic Disable
+disable_np=1
+disable_gpmdp=1
+disable_wnp=0

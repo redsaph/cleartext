@@ -52,5 +52,6 @@ width_container_std=(#skinSize#+(#skinSize#*0.09))
 width_container_scroll=(#skinSize#+(#skinSize#*0.3))
 height_container_std=(#skinSize#*0.0825)
 
+; --- CONTAINER TEXT
 xpos_containertext=(#skinSize#*0.67)
 align_containertext_supposed=Center
