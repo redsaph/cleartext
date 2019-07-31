@@ -27,9 +27,13 @@ disableScroll=0
 
 removeExtraFromText=0
 
-thinFont=Metropolis Extra Light
-thickFont=Metropolis Medium
-controlsFont=Metropolis Medium
+thinFont=Red Hat Display
+thickFont=Red Hat Display
+controlsFont=Red Hat Text Medium
+
+; thinFont=Segoe UI Light
+; thickFont=Segoe UI Semibold
+; controlsFont=Segoe UI Semibold
 
 mediaTextPositionHor=0
 mediaTextAlignment=LeftBottom

@@ -57,6 +57,9 @@ function alignCenter()
 	-- PLAYING
 	SKIN:Bang('!WriteKeyValue Variables xpos_playing "(#skinSize#*0.835)" "#@#positions.inc"')
 	SKIN:Bang('!WriteKeyValue Variables ypos_playing "(#skinSize#*0.06)" "#@#positions.inc"')
+	-- UPDATE INDICATOR
+	SKIN:Bang('!WriteKeyValue Variables xpos_playing "(#skinSize#*0.8725)" "#@#positions.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ypos_playing "(#skinSize#*0.062)" "#@#positions.inc"')
 	-- TIME
 	SKIN:Bang('!WriteKeyValue Variables xpos_time "(#skinSize#*0.5)" "#@#positions.inc"')
 	SKIN:Bang('!WriteKeyValue Variables ypos_time "(#skinSize#*0.07)" "#@#positions.inc"')
