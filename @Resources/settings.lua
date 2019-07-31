@@ -18,113 +18,113 @@
 
 playerTable = {
 	["Windows Media Player"] = {
-		playerController = "Title0",
-		musicSwitch = "0",
-		player = "WMP",
+		player_controller = "Title0",
+		player_mode = "0",
+		player_supposed = "WMP",
 		disable_np = "0",
 		disable_gpmdp = "1",
 		disable_wnp = "1"
 	},
 	["Foobar2000"] = {
-		playerController = "Title0",
-		musicSwitch = "0",
-		player = "CAD",
+		player_controller = "Title0",
+		player_mode = "0",
+		player_supposed = "CAD",
 		disable_np = "0",
 		disable_gpmdp = "1",
 		disable_wnp = "1"
 	},
 	["MusicBee"] = {
-		playerController = "Title0",
-		musicSwitch = "0",
-		player = "CAD",
+		player_controller = "Title0",
+		player_mode = "0",
+		player_supposed = "CAD",
 		disable_np = "0",
 		disable_gpmdp = "1",
 		disable_wnp = "1"
 	},
 	["Spotify (NowPlaying)"] = {
-		playerController = "Title0",
-		musicSwitch = "0",
-		player = "Spotify",
+		player_controller = "Title0",
+		player_mode = "0",
+		player_supposed = "Spotify",
 		disable_np = "0",
 		disable_gpmdp = "1",
 		disable_wnp = "1"
 	},
 	["iTunes"] = {
-		playerController = "Title0",
-		musicSwitch = "0",
-		player = "iTunes",
+		player_controller = "Title0",
+		player_mode = "0",
+		player_supposed = "iTunes",
 		disable_np = "0",
 		disable_gpmdp = "1",
 		disable_wnp = "1"
 	},
 	["VLC"] = {
-		playerController = "Title0",
-		musicSwitch = "0",
-		player = "CAD",
+		player_controller = "Title0",
+		player_mode = "0",
+		player_supposed = "CAD",
 		disable_np = "0",
 		disable_gpmdp = "1",
 		disable_wnp = "1"
 	},
 	["WebNowPlaying"] = {
-		playerController = "StateButton2",
-		musicSwitch = "2",
-		player = "Spotify",
+		player_controller = "StateButton2",
+		player_mode = "2",
+		player_supposed = "Spotify",
 		disable_np = "1",
 		disable_gpmdp = "1",
 		disable_wnp = "0"
 	},
 	["GPMDP"] = {
-		playerController = "StateButton1",
-		musicSwitch = "1",
-		player = "Spotify",
+		player_controller = "StateButton1",
+		player_mode = "1",
+		player_supposed = "Spotify",
 		disable_np = "1",
 		disable_gpmdp = "0",
 		disable_wnp = "1"
 	},
 	["MediaMonkey"] = {
-		playerController = "Title0",
-		musicSwitch = "0",
-		player = "MediaMonkey",
+		player_controller = "Title0",
+		player_mode = "0",
+		player_supposed = "MediaMonkey",
 		disable_np = "0",
 		disable_gpmdp = "1",
 		disable_wnp = "1"
 	},
 	["Media Player Classic"] = {
-		playerController = "Title0",
-		musicSwitch = "0",
-		player = "WLM",
+		player_controller = "Title0",
+		player_mode = "0",
+		player_supposed = "WLM",
 		disable_np = "0",
 		disable_gpmdp = "1",
 		disable_wnp = "1"
 	},
 	["J. River Media Center"] = {
-		playerController = "Title0",
-		musicSwitch = "0",
-		player = "CAD",
+		player_controller = "Title0",
+		player_mode = "0",
+		player_supposed = "CAD",
 		disable_np = "0",
 		disable_gpmdp = "1",
 		disable_wnp = "1"
 	},
 	["Winamp"] = {
-		playerController = "Title0",
-		musicSwitch = "0",
-		player = "Winamp",
+		player_controller = "Title0",
+		player_mode = "0",
+		player_supposed = "Winamp",
 		disable_np = "0",
 		disable_gpmdp = "1",
 		disable_wnp = "1"
 	},
 	["Zune"] = {
-		playerController = "Title0",
-		musicSwitch = "0",
-		player = "WLM",
+		player_controller = "Title0",
+		player_mode = "0",
+		player_supposed = "WLM",
 		disable_np = "0",
 		disable_gpmdp = "1",
 		disable_wnp = "1"
 	},
 	["AIMP"] = {
-		playerController = "Title0",
-		musicSwitch = "0",
-		player = "AIMP",
+		player_controller = "Title0",
+		player_mode = "0",
+		player_supposed = "AIMP",
 		disable_np = "0",
 		disable_gpmdp = "1",
 		disable_wnp = "1"
@@ -136,9 +136,9 @@ function Initialize()
 end -- ends Initialize
 
 -- function switchPlayer(currentlySet)
--- 	SKIN:Bang('!WriteKeyValue Variables MusicSwitch ' .. playerTable[currentlySet]['musicSwitch'] .. ' "#@#variables.inc"')
--- 	SKIN:Bang('!WriteKeyValue Variables playerController ' .. playerTable[currentlySet]['playerController'] .. ' "#@#variables.inc"')
--- 	SKIN:Bang('!WriteKeyValue Variables Player ' .. playerTable[currentlySet]['player'] .. ' "#@#variables.inc"')
+-- 	SKIN:Bang('!WriteKeyValue Variables player_mode ' .. playerTable[currentlySet]['player_mode'] .. ' "#@#variables.inc"')
+-- 	SKIN:Bang('!WriteKeyValue Variables player_controller ' .. playerTable[currentlySet]['player_controller'] .. ' "#@#variables.inc"')
+-- 	SKIN:Bang('!WriteKeyValue Variables player_supposed ' .. playerTable[currentlySet]['player'] .. ' "#@#variables.inc"')
 
 -- 	if currentlySet == 'WebNowPlaying' then
 -- 		SKIN:Bang('!WriteKeyValue Variables activePlugin WebNowPlaying #@#variables.inc')
@@ -151,10 +151,10 @@ end -- ends Initialize
 
 
 function setPlayer(selectedPlayerName)
-	SKIN:Bang('!WriteKeyValue Variables currentlySetName "' .. selectedPlayerName .. '" "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables Player ' .. playerTable[selectedPlayerName]['player'] .. ' "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables MusicSwitch ' .. playerTable[selectedPlayerName]['musicSwitch'] .. ' "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables playerController ' .. playerTable[selectedPlayerName]['playerController'] .. ' "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables player_setname "' .. selectedPlayerName .. '" "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables player_supposed ' .. playerTable[selectedPlayerName]['player_supposed'] .. ' "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables player_mode ' .. playerTable[selectedPlayerName]['player_mode'] .. ' "#@#variables.inc"')
+	SKIN:Bang('!WriteKeyValue Variables player_controller ' .. playerTable[selectedPlayerName]['player_controller'] .. ' "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables disable_np ' .. playerTable[selectedPlayerName]['disable_np'] .. ' "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables disable_gpmdp ' .. playerTable[selectedPlayerName]['disable_gpmdp'] .. ' "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables disable_wnp ' .. playerTable[selectedPlayerName]['disable_wnp'] .. ' "#@#variables.inc"')
