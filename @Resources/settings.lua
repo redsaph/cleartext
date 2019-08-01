@@ -135,21 +135,6 @@ function Initialize()
 	dofile(SKIN:GetVariable('@')..'align.lua')
 end -- ends Initialize
 
--- function switchPlayer(currentlySet)
--- 	SKIN:Bang('!WriteKeyValue Variables player_mode ' .. playerTable[currentlySet]['player_mode'] .. ' "#@#variables.inc"')
--- 	SKIN:Bang('!WriteKeyValue Variables player_controller ' .. playerTable[currentlySet]['player_controller'] .. ' "#@#variables.inc"')
--- 	SKIN:Bang('!WriteKeyValue Variables player_supposed ' .. playerTable[currentlySet]['player'] .. ' "#@#variables.inc"')
-
--- 	if currentlySet == 'WebNowPlaying' then
--- 		SKIN:Bang('!WriteKeyValue Variables activePlugin WebNowPlaying #@#variables.inc')
--- 	else
--- 		SKIN:Bang('!WriteKeyValue Variables activePlugin NowPlaying #@#variables.inc')
--- 	end
-
--- 	print('Setting ' .. currentlySet)
--- end -- ends switchPlayer
-
-
 function setPlayer(selectedPlayerName)
 	SKIN:Bang('!WriteKeyValue Variables player_setname "' .. selectedPlayerName .. '" "#@#variables.inc"')
 	SKIN:Bang('!WriteKeyValue Variables player_supposed ' .. playerTable[selectedPlayerName]['player_supposed'] .. ' "#@#variables.inc"')
