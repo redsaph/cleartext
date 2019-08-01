@@ -1,72 +1,72 @@
 [Variables]
 
 ; --- PROGRESS BAR
-orientation_progressbar=Vertical
-width_progressbar=(#skinSize#*0.005)
-height_progressbar=(#skinSize#*0.25)
-xpos_progressbar=(#skinSize#*0.22)
-ypos_progressbar=(#skinSize#*0.03)
+orientation_progressbar=Horizontal
+width_progressbar=(#skinSize#*1.1)
+height_progressbar=(#skinSize#*0.005)
+xpos_progressbar=(#skinSize#*0.14)
+ypos_progressbar=(#skinSize#*0.1075)
 
 ; --- NOW
-xpos_now=(#skinSize#*0.2)
-ypos_now=(#skinSize#*0.11)
+xpos_now=(#skinSize#*0.6025)
+ypos_now=(#skinSize#*0.045)
 
 ; --- PLAYING
-xpos_playing=(#skinSize#*0.2)
-ypos_playing=(#skinSize#*0.145)
+xpos_playing=(#skinSize#*0.7475)
+ypos_playing=(#skinSize#*0.0455)
 
 ; --- UPDATE INDICATOR
-xpos_indicator=(#skinSize#*0.09)
-ypos_indicator=(#skinSize#*0.115)
+xpos_indicator=(#skinSize#*0.875)
+ypos_indicator=(#skinSize#*0.057)
 
 ; --- TIME
-xpos_time=(#skinSize#*0.2)
-ypos_time=(#skinSize#*0.035)
+xpos_time=(#skinSize#*0.45)
+ypos_time=(#skinSize#*0.055)
 
 ; --- PROGRESS
-xpos_progress=(#skinSize#*0.2)
-ypos_progress=(#skinSize#*0.065)
+xpos_progress=(#skinSize#*1.03)
+ypos_progress=(#skinSize#*0.055)
 
 ; --- SETTINGS
-xpos_settings=(#skinSize#*0.125)
-ypos_settings=(#skinSize#*0.065)
+xpos_settings=(#skinSize#*0.935)
+ypos_settings=(#skinSize#*0.055)
 
 ; --- PLAY BUTTON
-xpos_play=(#skinSize#*0.12)
-ypos_play=(#skinSize#*0.235)
+xpos_play=(#skinSize#*0.725)
+ypos_play=0
 
 ; --- PREVIOUS BUTTON
-xpos_prev=(#skinSize#*0.2)
-ypos_prev=(#skinSize#*0.2)
+xpos_prev=(#skinSize#*0.575)
+ypos_prev=0
 
 ; --- NEXT BUTTON
-xpos_next=(#skinSize#*0.2)
-ypos_next=(#skinSize#*0.235)
+xpos_next=(#skinSize#*0.845)
+ypos_next=0
 
 ; --- INTERFACE
-align_interface=Right
+align_interface=Center
 
 ; --- REGULAR: CONTAINERS
-xpos_container_reg=(#skinSize#*0.245)
-ypos_containertop_reg=(#skinSize#*0.055)
-ypos_containerbtm_reg=(#skinSize#*0.1425)
-width_container_reg=(#skinSize#*1.0875)
+xpos_container_reg=(#skinSize#*0.0265)
+ypos_containertop_reg=(#skinSize#*0.105)
+ypos_containerbtm_reg=(#skinSize#*0.1925)
+width_container_reg=(#skinSize#*1.3)
 
 ; --- STANDARD: CONTAINERS
 width_container_std=(#skinSize#*1.0875)
-width_container_scroll=(#skinSize#*1.3)
+width_container_scroll=(#skinSize#*1.32)
 height_container_std=(#skinSize#*0.11)
 
 ; --- CONTAINER TEXT
-xpos_containertext=0
 ypos_containertextbtm=0
+xpos_containertext=(#skinSize#*0.66)
 ypos_containertexttop=(#skinSize#*0.12)
-align_containertext_supposed=Left
+align_containertext_supposed=Center
 
 ; PURE --------------
 
 ; --- PURE, UPDATE INDICATOR
-pure_xpos_indicator=0
+pure_xpos_indicator=(#skinSize#*0.69)
 
 ; --- PURE, REGULAR: CONTAINERS
 pure_ypos_containertop_reg=(#skinSize#*0.045)
