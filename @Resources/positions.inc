@@ -15,8 +15,12 @@ ypos_now=(#skinSize#*0.045)
 xpos_playing=(#skinSize#*0.7475)
 ypos_playing=(#skinSize#*0.0455)
 
+; --- NOW PLAYING FOR CENTER
+xpos_nowplaying=(#skinSize#*0.69)
+ypos_nowplaying=(#skinSize#*0.045)
+
 ; --- UPDATE INDICATOR
-xpos_indicator=(#skinSize#*0.875)
+xpos_indicator=(#skinSize#*0.84)
 ypos_indicator=(#skinSize#*0.057)
 
 ; --- TIME
@@ -24,11 +28,11 @@ xpos_time=(#skinSize#*0.45)
 ypos_time=(#skinSize#*0.055)
 
 ; --- PROGRESS
-xpos_progress=(#skinSize#*1.03)
+xpos_progress=(#skinSize#*1.02)
 ypos_progress=(#skinSize#*0.055)
 
 ; --- SETTINGS
-xpos_settings=(#skinSize#*0.935)
+xpos_settings=(#skinSize#*0.925)
 ypos_settings=(#skinSize#*0.055)
 
 ; --- PLAY BUTTON
@@ -40,7 +44,7 @@ xpos_prev=(#skinSize#*0.575)
 ypos_prev=0
 
 ; --- NEXT BUTTON
-xpos_next=(#skinSize#*0.845)
+xpos_next=(#skinSize#*0.835)
 ypos_next=0
 
 ; --- INTERFACE
