@@ -33,8 +33,8 @@ function alignLeft()
 	SKIN:Bang('!WriteKeyValue Variables xpos_nowplaying "(#skinSize#*0.69)" "#@#positions.inc"')
 	SKIN:Bang('!WriteKeyValue Variables ypos_nowplaying "(#skinSize#*0.045)" "#@#positions.inc"')
 	-- UPDATE INDICATOR
-	SKIN:Bang('!WriteKeyValue Variables xpos_indicator "(#skinSize#*0.09)" "#@#positions.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ypos_indicator "(#skinSize#*0.115)" "#@#positions.inc"')
+	SKIN:Bang('!WriteKeyValue Variables xpos_indicator "(#skinSize#*0.07)" "#@#positions.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ypos_indicator "(#skinSize#*0.1175)" "#@#positions.inc"')
 	-- TIME
 	SKIN:Bang('!WriteKeyValue Variables xpos_time "(#skinSize#*0.2)" "#@#positions.inc"')
 	SKIN:Bang('!WriteKeyValue Variables ypos_time "(#skinSize#*0.035)" "#@#positions.inc"')
@@ -171,8 +171,8 @@ function alignRight()
 	SKIN:Bang('!WriteKeyValue Variables xpos_nowplaying "(#skinSize#*0.69)" "#@#positions.inc"')
 	SKIN:Bang('!WriteKeyValue Variables ypos_nowplaying "(#skinSize#*0.045)" "#@#positions.inc"')
 	-- UPDATE INDICATOR
-	SKIN:Bang('!WriteKeyValue Variables xpos_indicator "(#skinSize#*1.28)" "#@#positions.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ypos_indicator "(#skinSize#*0.115)" "#@#positions.inc"')
+	SKIN:Bang('!WriteKeyValue Variables xpos_indicator "(#skinSize#*1.26)" "#@#positions.inc"')
+	SKIN:Bang('!WriteKeyValue Variables ypos_indicator "(#skinSize#*0.1175)" "#@#positions.inc"')
 	-- TIME
 	SKIN:Bang('!WriteKeyValue Variables xpos_time "(#skinSize#*1.145)" "#@#positions.inc"')
 	SKIN:Bang('!WriteKeyValue Variables ypos_time "(#skinSize#*0.035)" "#@#positions.inc"')

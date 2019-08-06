@@ -20,8 +20,8 @@ xpos_nowplaying=(#skinSize#*0.69)
 ypos_nowplaying=(#skinSize#*0.045)
 
 ; --- UPDATE INDICATOR
-xpos_indicator=(#skinSize#*0.09)
-ypos_indicator=(#skinSize#*0.115)
+xpos_indicator=(#skinSize#*0.07)
+ypos_indicator=(#skinSize#*0.1175)
 
 ; --- TIME
 xpos_time=(#skinSize#*0.2)
