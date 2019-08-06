@@ -13,7 +13,7 @@
 --
 -- Thank you very much.
 --
--- Last modified by Redsaph on February 13, 2019
+-- Last modified by Redsaph on August 6, 2019
 --
 
 playerTable = {
@@ -147,6 +147,50 @@ function setPlayer(selectedPlayerName)
 	SKIN:Bang('!UpdateMeter "playerTextDialogSubtitle" "Settings.ini"')
 	SKIN:Bang('!Redraw "Cleartext/Settings" "Settings.ini"')
 end -- ends setPlayer
+
+function toggleAdaptiveHide()
+	bool_adaptivehide = SKIN:GetVariable('bool_adaptivehide')
+
+	if bool_adaptivehide == '0' then	
+		SKIN:Bang('!WriteKeyValue Variables bool_adaptivehide "1" "#@#var.inc"')
+		SKIN:Bang('!WriteKeyValue Variables color_btn_adaptivehide_sint "#const_yellow#" "#@#var_int.inc"')
+		SKIN:Bang('!WriteKeyValue Variables bool_btn_adaptivehide_sint on "#@#var_int.inc"')
+	else
+		SKIN:Bang('!WriteKeyValue Variables bool_adaptivehide "0" "#@#var.inc"')
+		SKIN:Bang('!WriteKeyValue Variables color_btn_adaptivehide_sint "#const_gray#" "#@#var_int.inc"')
+		SKIN:Bang('!WriteKeyValue Variables bool_btn_adaptivehide_sint off "#@#var_int.inc"')
+	end
+end -- ends toggleAdaptiveHide
+
+function toggleScroll()
+	bool_scroll = SKIN:GetVariable('bool_scroll')
+
+	if bool_scroll == '0' then	
+		SKIN:Bang('!WriteKeyValue Variables bool_scroll "1" "#@#var.inc"')
+		SKIN:Bang('!WriteKeyValue Variables color_btn_scrolling_sint "#const_gray#" "#@#var_int.inc"')
+		SKIN:Bang('!WriteKeyValue Variables bool_btn_scrolling_sint off "#@#var_int.inc"')
+	else
+		SKIN:Bang('!WriteKeyValue Variables bool_scroll "0" "#@#var.inc"')
+		SKIN:Bang('!WriteKeyValue Variables color_btn_scrolling_sint "#const_yellow#" "#@#var_int.inc"')
+		SKIN:Bang('!WriteKeyValue Variables bool_btn_scrolling_sint on "#@#var_int.inc"')
+	end
+end -- ends toggleScroll
+
+function toggleStow()
+	bool_stow = SKIN:GetVariable('bool_stow')
+
+	if bool_stow == '0' then	
+		SKIN:Bang('!WriteKeyValue Variables bool_stow "1" "#@#var.inc"')
+		SKIN:Bang('!WriteKeyValue Variables name_stowgroup "Stow" "#@#var.inc"')
+		SKIN:Bang('!WriteKeyValue Variables color_btn_stow_sint "#const_yellow#" "#@#var_int.inc"')
+		SKIN:Bang('!WriteKeyValue Variables bool_btn_stow_sint on "#@#var_int.inc"')
+	else
+		SKIN:Bang('!WriteKeyValue Variables bool_stow "0" "#@#var.inc"')
+		SKIN:Bang('!WriteKeyValue Variables name_stowgroup "NULL" "#@#var.inc"')
+		SKIN:Bang('!WriteKeyValue Variables color_btn_stow_sint "#const_gray#" "#@#var_int.inc"')
+		SKIN:Bang('!WriteKeyValue Variables bool_btn_stow_sint off "#@#var_int.inc"')
+	end
+end -- ends toggleStow
 
 function refreshCleartext()
 	SKIN:Bang('!Refresh #CURRENTCONFIG#')
