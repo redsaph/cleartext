@@ -2,7 +2,8 @@
 
 ; --- SIZES (Backwards-compatible)
 
-skinSize=(#SCREENAREAHEIGHT#*0.5)
+skinSize=525
+; skinSize=(#SCREENAREAHEIGHT#*0.5)
 lastSetWidth=525
 
 ; --- TEXT CUSTOMIZATIONS
