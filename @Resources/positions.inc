@@ -75,5 +75,3 @@ pure_xpos_indicator=372.6
 ; --- PURE, REGULAR: CONTAINERS
 pure_ypos_containertop_reg=24.3
 pure_ypos_containerbtm_reg=71.55
-bool_alignright=0
-bool_aligncenter=1

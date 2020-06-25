@@ -4,7 +4,7 @@
 -- SETTINGS MODULE
 -- Made by Redsaph exclusively for Cleartext
 --
--- redsaph.xyz
+-- janvelasco.com
 -- github.com/redsaph/cleartext
 --
 -- If you have read this and have the intention
@@ -13,7 +13,7 @@
 --
 -- Thank you very much.
 --
--- Last modified by Redsaph on August 6, 2019
+-- Last modified by Redsaph on June 25, 2020
 --
 
 playerTable = {
@@ -415,36 +415,31 @@ function toggleTrim()
 	end
 end -- ends toggleAdaptiveHide
 
-function refreshCleartext()
-	SKIN:Bang('!Refresh #CURRENTCONFIG#')
-	alignment = SKIN:GetVariable('currentlySetAlign')
+function rescale(size)
+	bool_alignright = SKIN:GetVariable('bool_alignright')
+	bool_aligncenter = SKIN:GetVariable('bool_aligncenter')
 --	width = SKIN:GetVariable('size')
 	
-	SKIN:Bang('!HideMeterGroup resizeDialog')
-	SKIN:Bang('!HideMeterGroup unpDirectoryDialog')
-	SKIN:Bang('!HideMeterGroup themeDialog')
-	SKIN:Bang('!HideMeterGroup adaptiveDialog')
-	SKIN:Bang('!HideMeterGroup bottomTextDialog')
-	SKIN:Bang('!HideMeterGroup topTextDialog')
-	SKIN:Bang('!HideMeterGroup stowDialog')
-	SKIN:Bang('!HideMeterGroup playerDialog')
-	SKIN:Bang('!ShowMeterGroup buttons')
-	SKIN:Bang('!HideMeterGroup dialogDesign')
-	SKIN:Bang('!DisableMeasure "mInput"')
-	SKIN:Bang('!Refresh #CURRENTCONFIG#')
-	SKIN:Bang('!Refresh "Cleartext" "Cleartext.ini"')
-	SKIN:Bang('!Redraw "Cleartext" "Cleartext.ini"')
+--	SKIN:Bang('!Refresh #CURRENTCONFIG#')
+
+	print('size: ' .. size)
+	SKIN:Bang('!WriteKeyValue Variables skinSize "' .. size .. '" "#@#var.inc"')
 	
---	print('alignment: ' .. alignment)
---	print('width: ' .. width)
+-- 	print('in realign')
+-- 	print('bool_alignright: ' .. bool_alignright)
+-- 	print('bool_aligncenter: ' .. bool_aligncenter)
 	
-	if alignment == 'right' then
-		alignRight()
-	elseif alignment == 'left' then
-		alignLeft()
+	if bool_alignright == '0' and bool_aligncenter == '0' then
+		alignLeft(size)
+	elseif bool_alignright == '1' then
+		alignRight(size)
+	elseif bool_aligncenter == '1' then
+		alignCenter(size)
 	end
-	
-end -- ends refreshCleartext
+
+	SKIN:Bang('!Refresh #CURRENTCONFIG#')
+
+end -- ends realign
 
 function resetFonts()
 	SKIN:Bang('!WriteKeyValue Variables font_weightbtm 700 "#@#var.inc"')

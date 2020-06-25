@@ -2,7 +2,7 @@
 
 ; --- SIZES (Backwards-compatible)
 
-skinSize=(#SCREENAREAHEIGHT#*0.5)
+skinSize=540
 lastSetWidth=525
 
 ; --- TEXT CUSTOMIZATIONS
@@ -15,7 +15,7 @@ font_textinterface=Red Hat Text Medium
 ; --- INTERNAL SWITCHES AND CONFIGURATIONS
 
 bool_alignright=0
-bool_aligncenter=0
+bool_aligncenter=1
 bool_adaptivehide=0
 bool_stow=0
 bool_texttrim=0
