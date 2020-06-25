@@ -15,7 +15,7 @@ font_textinterface=Red Hat Text Medium
 ; --- INTERNAL SWITCHES AND CONFIGURATIONS
 
 bool_alignright=0
-bool_aligncenter=1
+bool_aligncenter=0
 bool_adaptivehide=0
 bool_stow=0
 bool_texttrim=0
