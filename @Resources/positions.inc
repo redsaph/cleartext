@@ -1,77 +1,77 @@
 [Variables]
 
 ; --- PROGRESS BAR
-orientation_progressbar=Horizontal
-width_progressbar=594
-height_progressbar=2.7
-xpos_progressbar=75.6
-ypos_progressbar=58.05
+orientation_progressbar=Vertical
+width_progressbar=(#skinSize#*0.005)
+height_progressbar=(#skinSize#*0.25)
+xpos_progressbar=(#skinSize#*0.22)
+ypos_progressbar=(#skinSize#*0.03)
 
 ; --- NOW
-xpos_now=325.35
-ypos_now=24.3
+xpos_now=(#skinSize#*0.2)
+ypos_now=(#skinSize#*0.11)
 
 ; --- PLAYING
-xpos_playing=403.11
-ypos_playing=24.57
+xpos_playing=(#skinSize#*0.2)
+ypos_playing=(#skinSize#*0.145)
 
 ; --- NOW PLAYING FOR CENTER
-xpos_nowplaying=372.6
-ypos_nowplaying=24.3
+xpos_nowplaying=(#skinSize#*0.69)
+ypos_nowplaying=(#skinSize#*0.045)
 
 ; --- UPDATE INDICATOR
-xpos_indicator=453.6
-ypos_indicator=30.78
+xpos_indicator=(#skinSize#*0.07)
+ypos_indicator=(#skinSize#*0.1175)
 
 ; --- TIME
-xpos_time=243
-ypos_time=29.7
+xpos_time=(#skinSize#*0.2)
+ypos_time=(#skinSize#*0.035)
 
 ; --- PROGRESS
-xpos_progress=550.8
-ypos_progress=29.7
+xpos_progress=(#skinSize#*0.2)
+ypos_progress=(#skinSize#*0.065)
 
 ; --- SETTINGS
-xpos_settings=499.5
-ypos_settings=29.7
+xpos_settings=(#skinSize#*0.125)
+ypos_settings=(#skinSize#*0.065)
 
 ; --- PLAY BUTTON
-xpos_play=391.5
-ypos_play=0
+xpos_play=(#skinSize#*0.12)
+ypos_play=(#skinSize#*0.235)
 
 ; --- PREVIOUS BUTTON
-xpos_prev=310.5
-ypos_prev=0
+xpos_prev=(#skinSize#*0.2)
+ypos_prev=(#skinSize#*0.2)
 
 ; --- NEXT BUTTON
-xpos_next=450.9
-ypos_next=0
+xpos_next=(#skinSize#*0.2)
+ypos_next=(#skinSize#*0.235)
 
 ; --- INTERFACE
-align_interface=Center
+align_interface=Right
 
 ; --- REGULAR: CONTAINERS
-xpos_container_reg=14.31
-ypos_containertop_reg=56.7
-ypos_containerbtm_reg=103.95
-width_container_reg=702
+xpos_container_reg=(#skinSize#*0.245)
+ypos_containertop_reg=(#skinSize#*0.055)
+ypos_containerbtm_reg=(#skinSize#*0.1425)
+width_container_reg=(#skinSize#*1.0875)
 
 ; --- STANDARD: CONTAINERS
-width_container_std=587.25
-width_container_scroll=712.8
-height_container_std=59.4
+width_container_std=(#skinSize#*1.0875)
+width_container_scroll=(#skinSize#*1.28)
+height_container_std=(#skinSize#*0.11)
 
 ; --- CONTAINER TEXT
-xpos_containertext=356.4
+xpos_containertext=0
 ypos_containertextbtm=0
-ypos_containertexttop=64.8
-align_containertext_supposed=Center
+ypos_containertexttop=(#skinSize#*0.12)
+align_containertext_supposed=Left
 
 ; PURE --------------
 
 ; --- PURE, UPDATE INDICATOR
-pure_xpos_indicator=372.6
+pure_xpos_indicator=0
 
 ; --- PURE, REGULAR: CONTAINERS
-pure_ypos_containertop_reg=24.3
-pure_ypos_containerbtm_reg=71.55
+pure_ypos_containertop_reg=(#skinSize#*0.045)
+pure_ypos_containerbtm_reg=(#skinSize#*0.1325)
