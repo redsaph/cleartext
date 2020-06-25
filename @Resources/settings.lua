@@ -4,7 +4,7 @@
 -- SETTINGS MODULE
 -- Made by Redsaph exclusively for Cleartext
 --
--- redsaph.xyz
+-- janvelasco.com
 -- github.com/redsaph/cleartext
 --
 -- If you have read this and have the intention
@@ -13,79 +13,317 @@
 --
 -- Thank you very much.
 --
--- Last modified by Redsaph on February 13, 2019
+-- Last modified by Redsaph on June 25, 2020
 --
 
 playerTable = {
 	["Windows Media Player"] = {
-		playerController = "Title0",
-		musicSwitch = "0",
-		player = "WMP"
+		player_controller = "Title0",
+		player_mode = "0",
+		player_supposed = "WMP",
+		disable_np = "0",
+		disable_gpmdp = "1",
+		disable_wnp = "1",
+		color_btn_aimp_sint = "#const_gray#",
+		color_btn_foobar2000_sint = "#const_gray#",
+		color_btn_gpmdp_sint = "#const_gray#",
+		color_btn_itunes_sint = "#const_gray#",
+		color_btn_jrmc_sint = "#const_gray#",
+		color_btn_mediamonkey_sint = "#const_gray#",
+		color_btn_mpc_sint = "#const_gray#",
+		color_btn_musicbee_sint = "#const_gray#",
+		color_btn_spotify_sint = "#const_gray#",
+		color_btn_vlc_sint = "#const_gray#",
+		color_btn_winamp_sint = "#const_gray#",
+		color_btn_wmp_sint = "#const_yellow#",
+		color_btn_wnp_sint = "#const_gray#",
+		color_btn_zune_sint = "#const_gray#"
 	},
 	["Foobar2000"] = {
-		playerController = "Title0",
-		musicSwitch = "0",
-		player = "CAD"
+		player_controller = "Title0",
+		player_mode = "0",
+		player_supposed = "CAD",
+		disable_np = "0",
+		disable_gpmdp = "1",
+		disable_wnp = "1",
+		color_btn_aimp_sint = "#const_gray#",
+		color_btn_foobar2000_sint = "#const_yellow#",
+		color_btn_gpmdp_sint = "#const_gray#",
+		color_btn_itunes_sint = "#const_gray#",
+		color_btn_jrmc_sint = "#const_gray#",
+		color_btn_mediamonkey_sint = "#const_gray#",
+		color_btn_mpc_sint = "#const_gray#",
+		color_btn_musicbee_sint = "#const_gray#",
+		color_btn_spotify_sint = "#const_gray#",
+		color_btn_vlc_sint = "#const_gray#",
+		color_btn_winamp_sint = "#const_gray#",
+		color_btn_wmp_sint = "#const_gray#",
+		color_btn_wnp_sint = "#const_gray#",
+		color_btn_zune_sint = "#const_gray#"
 	},
 	["MusicBee"] = {
-		playerController = "Title0",
-		musicSwitch = "0",
-		player = "CAD"
+		player_controller = "Title0",
+		player_mode = "0",
+		player_supposed = "CAD",
+		disable_np = "0",
+		disable_gpmdp = "1",
+		disable_wnp = "1",
+		color_btn_aimp_sint = "#const_gray#",
+		color_btn_foobar2000_sint = "#const_gray#",
+		color_btn_gpmdp_sint = "#const_gray#",
+		color_btn_itunes_sint = "#const_gray#",
+		color_btn_jrmc_sint = "#const_gray#",
+		color_btn_mediamonkey_sint = "#const_gray#",
+		color_btn_mpc_sint = "#const_gray#",
+		color_btn_musicbee_sint = "#const_yellow#",
+		color_btn_spotify_sint = "#const_gray#",
+		color_btn_vlc_sint = "#const_gray#",
+		color_btn_winamp_sint = "#const_gray#",
+		color_btn_wmp_sint = "#const_gray#",
+		color_btn_wnp_sint = "#const_gray#",
+		color_btn_zune_sint = "#const_gray#"
 	},
 	["Spotify (NowPlaying)"] = {
-		playerController = "Title0",
-		musicSwitch = "0",
-		player = "Spotify"
+		player_controller = "Title0",
+		player_mode = "0",
+		player_supposed = "Spotify",
+		disable_np = "0",
+		disable_gpmdp = "1",
+		disable_wnp = "1",
+		color_btn_aimp_sint = "#const_gray#",
+		color_btn_foobar2000_sint = "#const_gray#",
+		color_btn_gpmdp_sint = "#const_gray#",
+		color_btn_itunes_sint = "#const_gray#",
+		color_btn_jrmc_sint = "#const_gray#",
+		color_btn_mediamonkey_sint = "#const_gray#",
+		color_btn_mpc_sint = "#const_gray#",
+		color_btn_musicbee_sint = "#const_gray#",
+		color_btn_spotify_sint = "#const_yellow#",
+		color_btn_vlc_sint = "#const_gray#",
+		color_btn_winamp_sint = "#const_gray#",
+		color_btn_wmp_sint = "#const_gray#",
+		color_btn_wnp_sint = "#const_gray#",
+		color_btn_zune_sint = "#const_gray#"
 	},
 	["iTunes"] = {
-		playerController = "Title0",
-		musicSwitch = "0",
-		player = "iTunes"
+		player_controller = "Title0",
+		player_mode = "0",
+		player_supposed = "iTunes",
+		disable_np = "0",
+		disable_gpmdp = "1",
+		disable_wnp = "1",
+		color_btn_aimp_sint = "#const_gray#",
+		color_btn_foobar2000_sint = "#const_gray#",
+		color_btn_gpmdp_sint = "#const_gray#",
+		color_btn_itunes_sint = "#const_yellow#",
+		color_btn_jrmc_sint = "#const_gray#",
+		color_btn_mediamonkey_sint = "#const_gray#",
+		color_btn_mpc_sint = "#const_gray#",
+		color_btn_musicbee_sint = "#const_gray#",
+		color_btn_spotify_sint = "#const_gray#",
+		color_btn_vlc_sint = "#const_gray#",
+		color_btn_winamp_sint = "#const_gray#",
+		color_btn_wmp_sint = "#const_gray#",
+		color_btn_wnp_sint = "#const_gray#",
+		color_btn_zune_sint = "#const_gray#"
 	},
 	["VLC"] = {
-		playerController = "Title0",
-		musicSwitch = "0",
-		player = "CAD"
+		player_controller = "Title0",
+		player_mode = "0",
+		player_supposed = "CAD",
+		disable_np = "0",
+		disable_gpmdp = "1",
+		disable_wnp = "1",
+		color_btn_aimp_sint = "#const_gray#",
+		color_btn_foobar2000_sint = "#const_gray#",
+		color_btn_gpmdp_sint = "#const_gray#",
+		color_btn_itunes_sint = "#const_gray#",
+		color_btn_jrmc_sint = "#const_gray#",
+		color_btn_mediamonkey_sint = "#const_gray#",
+		color_btn_mpc_sint = "#const_gray#",
+		color_btn_musicbee_sint = "#const_gray#",
+		color_btn_spotify_sint = "#const_gray#",
+		color_btn_vlc_sint = "#const_yellow#",
+		color_btn_winamp_sint = "#const_gray#",
+		color_btn_wmp_sint = "#const_gray#",
+		color_btn_wnp_sint = "#const_gray#",
+		color_btn_zune_sint = "#const_gray#"
 	},
 	["WebNowPlaying"] = {
-		playerController = "StateButton2",
-		musicSwitch = "2",
-		player = "Spotify"
+		player_controller = "StateButton2",
+		player_mode = "2",
+		player_supposed = "Spotify",
+		disable_np = "1",
+		disable_gpmdp = "1",
+		disable_wnp = "0",
+		color_btn_aimp_sint = "#const_gray#",
+		color_btn_foobar2000_sint = "#const_gray#",
+		color_btn_gpmdp_sint = "#const_gray#",
+		color_btn_itunes_sint = "#const_gray#",
+		color_btn_jrmc_sint = "#const_gray#",
+		color_btn_mediamonkey_sint = "#const_gray#",
+		color_btn_mpc_sint = "#const_gray#",
+		color_btn_musicbee_sint = "#const_gray#",
+		color_btn_spotify_sint = "#const_gray#",
+		color_btn_vlc_sint = "#const_gray#",
+		color_btn_winamp_sint = "#const_gray#",
+		color_btn_wmp_sint = "#const_gray#",
+		color_btn_wnp_sint = "#const_yellow#",
+		color_btn_zune_sint = "#const_gray#"
 	},
 	["GPMDP"] = {
-		playerController = "StateButton1",
-		musicSwitch = "1",
-		player = "Spotify"
+		player_controller = "StateButton1",
+		player_mode = "1",
+		player_supposed = "Spotify",
+		disable_np = "1",
+		disable_gpmdp = "0",
+		disable_wnp = "1",
+		color_btn_aimp_sint = "#const_gray#",
+		color_btn_foobar2000_sint = "#const_gray#",
+		color_btn_gpmdp_sint = "#const_yellow#",
+		color_btn_itunes_sint = "#const_gray#",
+		color_btn_jrmc_sint = "#const_gray#",
+		color_btn_mediamonkey_sint = "#const_gray#",
+		color_btn_mpc_sint = "#const_gray#",
+		color_btn_musicbee_sint = "#const_gray#",
+		color_btn_spotify_sint = "#const_gray#",
+		color_btn_vlc_sint = "#const_gray#",
+		color_btn_winamp_sint = "#const_gray#",
+		color_btn_wmp_sint = "#const_gray#",
+		color_btn_wnp_sint = "#const_gray#",
+		color_btn_zune_sint = "#const_gray#"
 	},
 	["MediaMonkey"] = {
-		playerController = "Title0",
-		musicSwitch = "0",
-		player = "MediaMonkey"
+		player_controller = "Title0",
+		player_mode = "0",
+		player_supposed = "MediaMonkey",
+		disable_np = "0",
+		disable_gpmdp = "1",
+		disable_wnp = "1",
+		color_btn_aimp_sint = "#const_gray#",
+		color_btn_foobar2000_sint = "#const_gray#",
+		color_btn_gpmdp_sint = "#const_gray#",
+		color_btn_itunes_sint = "#const_gray#",
+		color_btn_jrmc_sint = "#const_gray#",
+		color_btn_mediamonkey_sint = "#const_yellow#",
+		color_btn_mpc_sint = "#const_gray#",
+		color_btn_musicbee_sint = "#const_gray#",
+		color_btn_spotify_sint = "#const_gray#",
+		color_btn_vlc_sint = "#const_gray#",
+		color_btn_winamp_sint = "#const_gray#",
+		color_btn_wmp_sint = "#const_gray#",
+		color_btn_wnp_sint = "#const_gray#",
+		color_btn_zune_sint = "#const_gray#"
 	},
 	["Media Player Classic"] = {
-		playerController = "Title0",
-		musicSwitch = "0",
-		player = "WLM"
+		player_controller = "Title0",
+		player_mode = "0",
+		player_supposed = "WLM",
+		disable_np = "0",
+		disable_gpmdp = "1",
+		disable_wnp = "1",
+		color_btn_aimp_sint = "#const_gray#",
+		color_btn_foobar2000_sint = "#const_gray#",
+		color_btn_gpmdp_sint = "#const_gray#",
+		color_btn_itunes_sint = "#const_gray#",
+		color_btn_jrmc_sint = "#const_gray#",
+		color_btn_mediamonkey_sint = "#const_gray#",
+		color_btn_mpc_sint = "#const_yellow#",
+		color_btn_musicbee_sint = "#const_gray#",
+		color_btn_spotify_sint = "#const_gray#",
+		color_btn_vlc_sint = "#const_gray#",
+		color_btn_winamp_sint = "#const_gray#",
+		color_btn_wmp_sint = "#const_gray#",
+		color_btn_wnp_sint = "#const_gray#",
+		color_btn_zune_sint = "#const_gray#"
 	},
 	["J. River Media Center"] = {
-		playerController = "Title0",
-		musicSwitch = "0",
-		player = "CAD"
+		player_controller = "Title0",
+		player_mode = "0",
+		player_supposed = "CAD",
+		disable_np = "0",
+		disable_gpmdp = "1",
+		disable_wnp = "1",
+		color_btn_aimp_sint = "#const_gray#",
+		color_btn_foobar2000_sint = "#const_gray#",
+		color_btn_gpmdp_sint = "#const_gray#",
+		color_btn_itunes_sint = "#const_gray#",
+		color_btn_jrmc_sint = "#const_yellow#",
+		color_btn_mediamonkey_sint = "#const_gray#",
+		color_btn_mpc_sint = "#const_gray#",
+		color_btn_musicbee_sint = "#const_gray#",
+		color_btn_spotify_sint = "#const_gray#",
+		color_btn_vlc_sint = "#const_gray#",
+		color_btn_winamp_sint = "#const_gray#",
+		color_btn_wmp_sint = "#const_gray#",
+		color_btn_wnp_sint = "#const_gray#",
+		color_btn_zune_sint = "#const_gray#"
 	},
 	["Winamp"] = {
-		playerController = "Title0",
-		musicSwitch = "0",
-		player = "Winamp"
+		player_controller = "Title0",
+		player_mode = "0",
+		player_supposed = "Winamp",
+		disable_np = "0",
+		disable_gpmdp = "1",
+		disable_wnp = "1",
+		color_btn_aimp_sint = "#const_gray#",
+		color_btn_foobar2000_sint = "#const_gray#",
+		color_btn_gpmdp_sint = "#const_gray#",
+		color_btn_itunes_sint = "#const_gray#",
+		color_btn_jrmc_sint = "#const_gray#",
+		color_btn_mediamonkey_sint = "#const_gray#",
+		color_btn_mpc_sint = "#const_gray#",
+		color_btn_musicbee_sint = "#const_gray#",
+		color_btn_spotify_sint = "#const_gray#",
+		color_btn_vlc_sint = "#const_gray#",
+		color_btn_winamp_sint = "#const_yellow#",
+		color_btn_wmp_sint = "#const_gray#",
+		color_btn_wnp_sint = "#const_gray#",
+		color_btn_zune_sint = "#const_gray#"
 	},
 	["Zune"] = {
-		playerController = "Title0",
-		musicSwitch = "0",
-		player = "WLM"
+		player_controller = "Title0",
+		player_mode = "0",
+		player_supposed = "WLM",
+		disable_np = "0",
+		disable_gpmdp = "1",
+		disable_wnp = "1",
+		color_btn_aimp_sint = "#const_gray#",
+		color_btn_foobar2000_sint = "#const_gray#",
+		color_btn_gpmdp_sint = "#const_gray#",
+		color_btn_itunes_sint = "#const_gray#",
+		color_btn_jrmc_sint = "#const_gray#",
+		color_btn_mediamonkey_sint = "#const_gray#",
+		color_btn_mpc_sint = "#const_gray#",
+		color_btn_musicbee_sint = "#const_gray#",
+		color_btn_spotify_sint = "#const_gray#",
+		color_btn_vlc_sint = "#const_gray#",
+		color_btn_winamp_sint = "#const_gray#",
+		color_btn_wmp_sint = "#const_gray#",
+		color_btn_wnp_sint = "#const_gray#",
+		color_btn_zune_sint = "#const_yellow#"
 	},
 	["AIMP"] = {
-		playerController = "Title0",
-		musicSwitch = "0",
-		player = "AIMP"
+		player_controller = "Title0",
+		player_mode = "0",
+		player_supposed = "AIMP",
+		disable_np = "0",
+		disable_gpmdp = "1",
+		disable_wnp = "1",
+		color_btn_aimp_sint = "#const_yellow#",
+		color_btn_foobar2000_sint = "#const_gray#",
+		color_btn_gpmdp_sint = "#const_gray#",
+		color_btn_itunes_sint = "#const_gray#",
+		color_btn_jrmc_sint = "#const_gray#",
+		color_btn_mediamonkey_sint = "#const_gray#",
+		color_btn_mpc_sint = "#const_gray#",
+		color_btn_musicbee_sint = "#const_gray#",
+		color_btn_spotify_sint = "#const_gray#",
+		color_btn_vlc_sint = "#const_gray#",
+		color_btn_winamp_sint = "#const_gray#",
+		color_btn_wmp_sint = "#const_gray#",
+		color_btn_wnp_sint = "#const_gray#",
+		color_btn_zune_sint = "#const_gray#"
 	}
 }
 
@@ -93,58 +331,119 @@ function Initialize()
 	dofile(SKIN:GetVariable('@')..'align.lua')
 end -- ends Initialize
 
--- function switchPlayer(currentlySet)
--- 	SKIN:Bang('!WriteKeyValue Variables MusicSwitch ' .. playerTable[currentlySet]['musicSwitch'] .. ' "#@#variables.inc"')
--- 	SKIN:Bang('!WriteKeyValue Variables playerController ' .. playerTable[currentlySet]['playerController'] .. ' "#@#variables.inc"')
--- 	SKIN:Bang('!WriteKeyValue Variables Player ' .. playerTable[currentlySet]['player'] .. ' "#@#variables.inc"')
-
--- 	if currentlySet == 'WebNowPlaying' then
--- 		SKIN:Bang('!WriteKeyValue Variables activePlugin WebNowPlaying #@#variables.inc')
--- 	else
--- 		SKIN:Bang('!WriteKeyValue Variables activePlugin NowPlaying #@#variables.inc')
--- 	end
-
--- 	print('Setting ' .. currentlySet)
--- end -- ends switchPlayer
-
-
 function setPlayer(selectedPlayerName)
-	SKIN:Bang('!WriteKeyValue Variables currentlySetName "' .. selectedPlayerName .. '" "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables Player ' .. playerTable[selectedPlayerName]['player'] .. ' "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables MusicSwitch ' .. playerTable[selectedPlayerName]['musicSwitch'] .. ' "#@#variables.inc"')
-	SKIN:Bang('!WriteKeyValue Variables playerController ' .. playerTable[selectedPlayerName]['playerController'] .. ' "#@#variables.inc"')
-	
-	SKIN:Bang('!UpdateMeter "playerTextDialogSubtitle" "Settings.ini"')
-	SKIN:Bang('!Redraw "Cleartext/Settings" "Settings.ini"')
+	SKIN:Bang('!WriteKeyValue Variables player_setname "' .. selectedPlayerName .. '" "#@#var.inc"')
+	SKIN:Bang('!WriteKeyValue Variables player_supposed ' .. playerTable[selectedPlayerName]['player_supposed'] .. ' "#@#var.inc"')
+	SKIN:Bang('!WriteKeyValue Variables player_mode ' .. playerTable[selectedPlayerName]['player_mode'] .. ' "#@#var.inc"')
+	SKIN:Bang('!WriteKeyValue Variables player_controller ' .. playerTable[selectedPlayerName]['player_controller'] .. ' "#@#var.inc"')
+	SKIN:Bang('!WriteKeyValue Variables disable_np ' .. playerTable[selectedPlayerName]['disable_np'] .. ' "#@#var.inc"')
+	SKIN:Bang('!WriteKeyValue Variables disable_gpmdp ' .. playerTable[selectedPlayerName]['disable_gpmdp'] .. ' "#@#var.inc"')
+	SKIN:Bang('!WriteKeyValue Variables disable_wnp ' .. playerTable[selectedPlayerName]['disable_wnp'] .. ' "#@#var.inc"')
+	SKIN:Bang('!WriteKeyValue Variables color_btn_aimp_sint "' .. playerTable[selectedPlayerName]['color_btn_aimp_sint'] .. '" "#@#var_int.inc"')
+	SKIN:Bang('!WriteKeyValue Variables color_btn_foobar2000_sint "' .. playerTable[selectedPlayerName]['color_btn_foobar2000_sint'] .. '" "#@#var_int.inc"')
+	SKIN:Bang('!WriteKeyValue Variables color_btn_gpmdp_sint "' .. playerTable[selectedPlayerName]['color_btn_gpmdp_sint'] .. '" "#@#var_int.inc"')
+	SKIN:Bang('!WriteKeyValue Variables color_btn_itunes_sint "' .. playerTable[selectedPlayerName]['color_btn_itunes_sint'] .. '" "#@#var_int.inc"')
+	SKIN:Bang('!WriteKeyValue Variables color_btn_jrmc_sint "' .. playerTable[selectedPlayerName]['color_btn_jrmc_sint'] .. '" "#@#var_int.inc"')
+	SKIN:Bang('!WriteKeyValue Variables color_btn_mediamonkey_sint "' .. playerTable[selectedPlayerName]['color_btn_mediamonkey_sint'] .. '" "#@#var_int.inc"')
+	SKIN:Bang('!WriteKeyValue Variables color_btn_mpc_sint "' .. playerTable[selectedPlayerName]['color_btn_mpc_sint'] .. '" "#@#var_int.inc"')
+	SKIN:Bang('!WriteKeyValue Variables color_btn_musicbee_sint "' .. playerTable[selectedPlayerName]['color_btn_musicbee_sint'] .. '" "#@#var_int.inc"')
+	SKIN:Bang('!WriteKeyValue Variables color_btn_spotify_sint "' .. playerTable[selectedPlayerName]['color_btn_spotify_sint'] .. '" "#@#var_int.inc"')
+	SKIN:Bang('!WriteKeyValue Variables color_btn_vlc_sint "' .. playerTable[selectedPlayerName]['color_btn_vlc_sint'] .. '" "#@#var_int.inc"')
+	SKIN:Bang('!WriteKeyValue Variables color_btn_winamp_sint "' .. playerTable[selectedPlayerName]['color_btn_winamp_sint'] .. '" "#@#var_int.inc"')
+	SKIN:Bang('!WriteKeyValue Variables color_btn_wmp_sint "' .. playerTable[selectedPlayerName]['color_btn_wmp_sint'] .. '" "#@#var_int.inc"')
+	SKIN:Bang('!WriteKeyValue Variables color_btn_wnp_sint "' .. playerTable[selectedPlayerName]['color_btn_wnp_sint'] .. '" "#@#var_int.inc"')
+	SKIN:Bang('!WriteKeyValue Variables color_btn_zune_sint "' .. playerTable[selectedPlayerName]['color_btn_zune_sint'] .. '" "#@#var_int.inc"')
 end -- ends setPlayer
 
-function refreshCleartext()
-	SKIN:Bang('!Refresh #CURRENTCONFIG#')
-	alignment = SKIN:GetVariable('currentlySetAlign')
+function toggleAdaptiveHide()
+	bool_adaptivehide = SKIN:GetVariable('bool_adaptivehide')
+
+	if bool_adaptivehide == '0' then	
+		SKIN:Bang('!WriteKeyValue Variables bool_adaptivehide "1" "#@#var.inc"')
+		SKIN:Bang('!WriteKeyValue Variables color_btn_adaptivehide_sint "#const_yellow#" "#@#var_int.inc"')
+		SKIN:Bang('!WriteKeyValue Variables bool_btn_adaptivehide_sint on "#@#var_int.inc"')
+	else
+		SKIN:Bang('!WriteKeyValue Variables bool_adaptivehide "0" "#@#var.inc"')
+		SKIN:Bang('!WriteKeyValue Variables color_btn_adaptivehide_sint "#const_gray#" "#@#var_int.inc"')
+		SKIN:Bang('!WriteKeyValue Variables bool_btn_adaptivehide_sint off "#@#var_int.inc"')
+	end
+end -- ends toggleAdaptiveHide
+
+function toggleScroll()
+	bool_scroll = SKIN:GetVariable('bool_scroll')
+
+	if bool_scroll == '0' then	
+		SKIN:Bang('!WriteKeyValue Variables bool_scroll "1" "#@#var.inc"')
+		SKIN:Bang('!WriteKeyValue Variables color_btn_scrolling_sint "#const_gray#" "#@#var_int.inc"')
+		SKIN:Bang('!WriteKeyValue Variables bool_btn_scrolling_sint off "#@#var_int.inc"')
+	else
+		SKIN:Bang('!WriteKeyValue Variables bool_scroll "0" "#@#var.inc"')
+		SKIN:Bang('!WriteKeyValue Variables color_btn_scrolling_sint "#const_yellow#" "#@#var_int.inc"')
+		SKIN:Bang('!WriteKeyValue Variables bool_btn_scrolling_sint on "#@#var_int.inc"')
+	end
+end -- ends toggleScroll
+
+function toggleStow()
+	bool_stow = SKIN:GetVariable('bool_stow')
+
+	if bool_stow == '0' then	
+		SKIN:Bang('!WriteKeyValue Variables bool_stow "1" "#@#var.inc"')
+		SKIN:Bang('!WriteKeyValue Variables name_stowgroup "Stow" "#@#var.inc"')
+		SKIN:Bang('!WriteKeyValue Variables color_btn_stow_sint "#const_yellow#" "#@#var_int.inc"')
+		SKIN:Bang('!WriteKeyValue Variables bool_btn_stow_sint on "#@#var_int.inc"')
+	else
+		SKIN:Bang('!WriteKeyValue Variables bool_stow "0" "#@#var.inc"')
+		SKIN:Bang('!WriteKeyValue Variables name_stowgroup "NULL" "#@#var.inc"')
+		SKIN:Bang('!WriteKeyValue Variables color_btn_stow_sint "#const_gray#" "#@#var_int.inc"')
+		SKIN:Bang('!WriteKeyValue Variables bool_btn_stow_sint off "#@#var_int.inc"')
+	end
+end -- ends toggleStow
+
+function toggleTrim()
+	bool_texttrim = SKIN:GetVariable('bool_texttrim')
+
+	if bool_texttrim == '0' then	
+		SKIN:Bang('!WriteKeyValue Variables bool_texttrim "1" "#@#var.inc"')
+		SKIN:Bang('!WriteKeyValue Variables color_btn_trim_sint "#const_yellow#" "#@#var_int.inc"')
+		SKIN:Bang('!WriteKeyValue Variables bool_btn_trim_sint on "#@#var_int.inc"')
+		print("On")
+	else
+		SKIN:Bang('!WriteKeyValue Variables bool_texttrim "0" "#@#var.inc"')
+		SKIN:Bang('!WriteKeyValue Variables color_btn_trim_sint "#const_gray#" "#@#var_int.inc"')
+		SKIN:Bang('!WriteKeyValue Variables bool_btn_trim_sint off "#@#var_int.inc"')
+		print("Off")
+	end
+end -- ends toggleAdaptiveHide
+
+function rescale(size)
+	bool_alignright = SKIN:GetVariable('bool_alignright')
+	bool_aligncenter = SKIN:GetVariable('bool_aligncenter')
 --	width = SKIN:GetVariable('size')
 	
-	SKIN:Bang('!HideMeterGroup resizeDialog')
-	SKIN:Bang('!HideMeterGroup unpDirectoryDialog')
-	SKIN:Bang('!HideMeterGroup themeDialog')
-	SKIN:Bang('!HideMeterGroup adaptiveDialog')
-	SKIN:Bang('!HideMeterGroup bottomTextDialog')
-	SKIN:Bang('!HideMeterGroup topTextDialog')
-	SKIN:Bang('!HideMeterGroup stowDialog')
-	SKIN:Bang('!HideMeterGroup playerDialog')
-	SKIN:Bang('!ShowMeterGroup buttons')
-	SKIN:Bang('!HideMeterGroup dialogDesign')
-	SKIN:Bang('!DisableMeasure "mInput"')
-	SKIN:Bang('!Refresh #CURRENTCONFIG#')
-	SKIN:Bang('!Refresh "Cleartext" "Cleartext.ini"')
-	SKIN:Bang('!Redraw "Cleartext" "Cleartext.ini"')
+--	SKIN:Bang('!Refresh #CURRENTCONFIG#')
+
+	print('size: ' .. size)
+	SKIN:Bang('!WriteKeyValue Variables skinSize "' .. size .. '" "#@#var.inc"')
 	
---	print('alignment: ' .. alignment)
---	print('width: ' .. width)
+-- 	print('in realign')
+-- 	print('bool_alignright: ' .. bool_alignright)
+-- 	print('bool_aligncenter: ' .. bool_aligncenter)
 	
-	if alignment == 'right' then
-		alignRight()
-	elseif alignment == 'left' then
-		alignLeft()
+	if bool_alignright == '0' and bool_aligncenter == '0' then
+		alignLeft(size)
+	elseif bool_alignright == '1' then
+		alignRight(size)
+	elseif bool_aligncenter == '1' then
+		alignCenter(size)
 	end
-	
-end -- ends refreshCleartext
+
+	SKIN:Bang('!Refresh #CURRENTCONFIG#')
+
+end -- ends realign
+
+function resetFonts()
+	SKIN:Bang('!WriteKeyValue Variables font_weightbtm 700 "#@#var.inc"')
+	SKIN:Bang('!WriteKeyValue Variables font_texttop "Red Hat Display" "#@#var.inc"')
+	SKIN:Bang('!WriteKeyValue Variables font_textbtm "Red Hat Display" "#@#var.inc"')
+	SKIN:Bang('!WriteKeyValue Variables font_textinterface "Red Hat Text Medium" "#@#var.inc"')
+end -- ends resetFonts
