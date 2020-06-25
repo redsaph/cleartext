@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/fd392d69-a1f3-4639-af21-10de6a84e875/d8lh1a9-9f25a36a-a767-44fb-ac85-8f6b88ee6f06.png">
-  <a href="https://github.com/redsaph/cleartext/releases"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/redsaph/cleartext?style=for-the-badge"> <img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/redsaph/cleartext/total?color=DC143C&style=for-the-badge"></a>
+  <a href="https://github.com/redsaph/cleartext/releases/latest"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/redsaph/cleartext?style=for-the-badge"></a> <a href="https://github.com/redsaph/cleartext/releases"><img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/redsaph/cleartext/total?color=DC143C&style=for-the-badge"></a>
 
   <a href="http://fav.me/d8lh1a9" style="font-size:12px">+ OVER A MILLION VIEWS & MORE THAN HUNDRED THOUSANDS OF DOWNLOADS ON DEVIANTART</a>
 </p>
