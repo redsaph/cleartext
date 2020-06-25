@@ -1,15 +1,36 @@
-<p align="center">
-  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/fd392d69-a1f3-4639-af21-10de6a84e875/d8lh1a9-9f25a36a-a767-44fb-ac85-8f6b88ee6f06.png">
-  <a href="https://github.com/redsaph/cleartext/releases/latest"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/redsaph/cleartext?style=for-the-badge"></a> <a href="https://github.com/redsaph/cleartext/releases"><img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/redsaph/cleartext/total?color=DC143C&style=for-the-badge"></a>
-
-  <a href="http://fav.me/d8lh1a9" style="font-size:12px">+ OVER A MILLION VIEWS & MORE THAN HUNDRED THOUSANDS OF DOWNLOADS ON DEVIANTART</a>
+<p align="center" style="width:100%">
+  <img src="https://janvelasco.com/previews/cleartext/CleartextX20200625.png"><br><br>
+  <a href="https://github.com/redsaph/cleartext/releases/latest"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/redsaph/cleartext?style=for-the-badge"></a> <a href="https://github.com/redsaph/cleartext/releases"><img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/redsaph/cleartext/total?color=DC143C&style=for-the-badge"></a><br><a href="http://fav.me/d8lh1a9" style="font-size:12px; text-align:center">with 1M+ views and hundreds and thousands of downloads on DeviantART!</a>
 </p>
 
 ---
 
-This is a now playing widget inspired by clear information boards which only show important content. More options, such as skipping the track and pausing it can be found by hovering over it.  
+**Welcome to Cleartext.** [Original since 2013.](http://fav.me/d6hxdwa)
 
-**F E A T U R E S**  
-Adaptive Resizing ● Adaptive Hide ● Spotify support† ● GPMDP support ● WebNowPlaying support ● Pure text mode ● Smooth scroll for Pure mode ● Easy font changing ● Smart text trimming ● Hide-away controls ● Update indicators ● Right align text mode ● User-friendly Settings panel ● Switch color mode ● Text switching
-  
-_†Basic Spotify support is done through the revamped NowPlaying measure in Rainmeter 4.2. For full Spotify support, choose WebNowPlaying as the media player in the Cleartext Settings panel, install  [Spicetify](https://github.com/khanhas/spicetify-cli)  and enable the modded WebNowPlaying Companion in the Spicetify menu._
+Cleartext is a simplistic Rainmeter Now Playing widget inspired by clear and minimalistic information boards. More options, such as skipping the track and pausing it can be found by hovering over it.
+
+---
+**[DOWNLOAD &rsaquo;](https://github.com/redsaph/cleartext/releases/latest)** &nbsp; | &nbsp; **[HELP & SUPPORT &rsaquo;](https://github.com/redsaph/cleartext/wiki/support)** &nbsp; | &nbsp; **[REPORT AN ISSUE &rsaquo;](https://github.com/redsaph/cleartext/issues)** &nbsp; | &nbsp; **[CREDITS &rsaquo;](https://github.com/redsaph/cleartext/wiki/Credits)**
+
+---
+
+**Player support**
+
+Spotify, Google Play Music Desktop Player, Chrome and Firefox browsers with WebNowPlaying, and all standard players supported by Rainmeter
+
+
+**Features**
+
+* **Adaptive Resizing**: Display-dependent scaling
+* **Adaptive Hide**: Automatic hiding when music is not playing
+* **Smooth Scroll**: Smooth scrolling on long text for both regular & Cleartext Pure
+* **Pure text mode**: Just text. That's all!
+* **Dynamic Disable**: unused music plugins are automatically disabled
+* **Dynamic Update**: variable skin refresh rates
+* Left, center, and right alignment
+* Easy font and color changing
+* Smart text trimming
+* Hide-away controls
+* Update indicators
+* Text switching
+* User-friendly Settings panel
