@@ -1,0 +1,42 @@
+TOP TEXT 1
+
+X=([mWidthTop] <= #width_container_scroll# ? (#bool_alignright# > 0 ? #width_container_std# : (#bool_aligncenter# > 0 ? #xpos_containertext# : 0)) : ((#bool_scroll# = 0) ? (#bool_alignright# > 0 ? ([mWidthTop] + [mMoveTop]) : [mMoveTop]) : (#bool_alignright# > 0 ? #width_container_std# : (#bool_aligncenter# > 0 ? (#xpos_containertext#) : 0))))
+
+if text width <= scrolling container width
+    if alignright is on // ALIGN RIGHT
+        set X to standard container width
+    else
+        if aligncenter is on // ALIGN CENTER
+            set X to xpos container text
+        else // ALIGN LEFT
+            set X to 0 
+
+else
+    if scroll is on
+        if alignright is on // ALIGN RIGHT
+            set X to mWidthTop + mMoveTop
+        else // ALIGN LEFT
+            set X to mMoveTop
+    else
+        if alignright is on
+            set X to standard container width
+        else
+            if aligncenter is on
+                set X to xpos container text
+            else
+                set X to 0
+
+TOP TEXT 2
+
+X=([mWidthTop] <= #width_container_scroll# ? ((#bool_alignright# > 0) ? #width_container_std# : 0) : (#bool_alignright# > 0 ? ([mMoveTop]) : ([mWidthTop] + [mMoveTop])))
+
+if text width <= scrolling container width
+    if alignright is on // ALIGN RIGHT
+        set X to standard contianer width
+    else // ALIGN LEFT
+        set X to 0
+else
+    if alignright is on
+        set X to mMoveBottom
+    else
+        set X to mWidthBottom + mMoveBottom
