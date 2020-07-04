@@ -40,8 +40,8 @@ function alignLeft(size)
 	SKIN:Bang('!WriteKeyValue Variables xpos_time "(' .. size .. '*0.2)" "#@#positions.inc"')
 	SKIN:Bang('!WriteKeyValue Variables ypos_time "(' .. size .. '*0.035)" "#@#positions.inc"')
 	-- PROGRESS
-	SKIN:Bang('!WriteKeyValue Variables xpos_progress "(' .. size .. '*0.2)" "#@#positions.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ypos_progress "(' .. size .. '*0.065)" "#@#positions.inc"')
+	SKIN:Bang('!WriteKeyValue Variables progressbar_mousedirection MouseY "#@#var.inc"')
+	SKIN:Bang('!WriteKeyValue Variables progressbar_flip 1 "#@#var.inc"')
 	-- SETTINGS
 	SKIN:Bang('!WriteKeyValue Variables xpos_settings "(' .. size .. '*0.125)" "#@#positions.inc"')
 	SKIN:Bang('!WriteKeyValue Variables ypos_settings "(' .. size .. '*0.065)" "#@#positions.inc"')
@@ -78,8 +78,6 @@ function alignLeft(size)
 	-- SWITCHES
 	SKIN:Bang('!WriteKeyValue Variables bool_alignright 0 "#@#var.inc"')
 	SKIN:Bang('!WriteKeyValue Variables bool_aligncenter 0 "#@#var.inc"')
-	
-	SKIN:Bang('!Refresh #CURRENTCONFIG#')	
 end -- ends alignLeft
 
 function getLargestNumber(a, b)
@@ -113,8 +111,8 @@ function alignCenter(size)
 	SKIN:Bang('!WriteKeyValue Variables xpos_time "(' .. size .. '*0.45)" "#@#positions.inc"')
 	SKIN:Bang('!WriteKeyValue Variables ypos_time "(' .. size .. '*0.055)" "#@#positions.inc"')
 	-- PROGRESS
-	SKIN:Bang('!WriteKeyValue Variables xpos_progress "(' .. size .. '*1.02)" "#@#positions.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ypos_progress "(' .. size .. '*0.055)" "#@#positions.inc"')
+	SKIN:Bang('!WriteKeyValue Variables progressbar_mousedirection MouseX "#@#var.inc"')
+	SKIN:Bang('!WriteKeyValue Variables progressbar_flip 0 "#@#var.inc"')
 	-- SETTINGS
 	SKIN:Bang('!WriteKeyValue Variables xpos_settings "(' .. size .. '*0.925)" "#@#positions.inc"')
 	SKIN:Bang('!WriteKeyValue Variables ypos_settings "(' .. size .. '*0.055)" "#@#positions.inc"')
@@ -151,8 +149,6 @@ function alignCenter(size)
 	-- SWITCHES
 	SKIN:Bang('!WriteKeyValue Variables bool_alignright 0 "#@#var.inc"')
 	SKIN:Bang('!WriteKeyValue Variables bool_aligncenter 1 "#@#var.inc"')
-	
-	SKIN:Bang('!Refresh #CURRENTCONFIG#')	
 end -- ends alignCenter
 
 function alignRight(size)
@@ -178,8 +174,8 @@ function alignRight(size)
 	SKIN:Bang('!WriteKeyValue Variables xpos_time "(' .. size .. '*1.145)" "#@#positions.inc"')
 	SKIN:Bang('!WriteKeyValue Variables ypos_time "(' .. size .. '*0.035)" "#@#positions.inc"')
 	-- PROGRESS
-	SKIN:Bang('!WriteKeyValue Variables xpos_progress "(' .. size .. '*1.145)" "#@#positions.inc"')
-	SKIN:Bang('!WriteKeyValue Variables ypos_progress "(' .. size .. '*0.065)" "#@#positions.inc"')
+	SKIN:Bang('!WriteKeyValue Variables progressbar_mousedirection MouseY "#@#var.inc"')
+	SKIN:Bang('!WriteKeyValue Variables progressbar_flip 1 "#@#var.inc"')
 	-- SETTINGS
 	SKIN:Bang('!WriteKeyValue Variables xpos_settings "(' .. size .. '*1.215)" "#@#positions.inc"')
 	SKIN:Bang('!WriteKeyValue Variables ypos_settings "(' .. size .. '*0.065)" "#@#positions.inc"')
@@ -216,6 +212,4 @@ function alignRight(size)
 	-- SWITCHES
 	SKIN:Bang('!WriteKeyValue Variables bool_alignright 1 "#@#var.inc"')
 	SKIN:Bang('!WriteKeyValue Variables bool_aligncenter 0 "#@#var.inc"')
-	
-	SKIN:Bang('!Refresh #CURRENTCONFIG#')	
 end -- ends alignRight

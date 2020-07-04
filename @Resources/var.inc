@@ -33,17 +33,21 @@ name_bottomText=mTitle
 ; --- INTERNAL PLAYER CONTROLS
 
 ;; 0 = Music, 1 = GPMDP, 2 = WebNowPlaying
-player_mode=0
+player_mode=2
 player_supposed=Spotify
 
-player_controller=Title0
+player_controller=StateButton2
 
-player_setname=Spotify (NowPlaying)
+player_setname=WebNowPlaying
 player_setvalue=WMP
 
 ; --- DYNAMIC DISABLE (Active low switches)
-disable_np=0
+disable_np=1
 disable_gpmdp=1
-disable_wnp=1
+disable_wnp=0
 color_btn_adaptivehide_sint=128,128,128,255
 bool_btn_adaptivehide_sint=off
+
+; --- PROGRESS BAR ACTION DIRECTIONS
+progressbar_mousedirection=MouseY
+progressbar_flip=1
