@@ -1,4 +1,6 @@
 <p align="center" style="width:100%">
+  <h2>This project has been discontinued. Thank you for your love and support throughout all these years!</h2>
+  <hr>
   <a href="https://github.com/redsaph/cleartext/releases/latest">
   <img src="https://janvelasco.com/previews/cleartext/CleartextX20200625.png"><br><br><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/redsaph/cleartext?style=for-the-badge"></a> <a href="https://github.com/redsaph/cleartext/releases"><img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/redsaph/cleartext/total?color=DC143C&style=for-the-badge"></a> <a href="https://github.com/redsaph/cleartext/wiki/Support#using-the-built-in-update-checker-with-the-update-service"><img alt="Update Service" src="https://img.shields.io/website?down_message=Offline&label=Update%20Service&style=for-the-badge&up_message=Online&url=http%3A%2F%2Fjanvelasco.com%2Fupdates%2Fcleartext%2Fversion.ini"></a><br><a href="http://fav.me/d8lh1a9" style="font-size:12px; text-align:center">with 1M+ views and hundreds and thousands of downloads on DeviantART!</a>
 </p>
